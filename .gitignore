@@ -28,7 +28,9 @@ yarn-error.log*
 # temporary & tool cache
 .playwright-mcp/
 scratch/
-Images/
+/Images/
+!/public/images/
+!/public/images/**
 
 # vercel
 .vercel

@@ -122,20 +122,6 @@ export function Header({ onOpenBooking }: HeaderProps) {
                   </Link>
                 );
               })}
-
-              {/* Bengali / Bangladesh Landing Pill */}
-              <Link
-                href="/bangladesh/eye-care"
-                className={`text-[12px] font-bold tracking-[0.2px] px-3.5 py-1.5 rounded-full border border-white/20 transition-all flex items-center gap-1.5 ${
-                  pathname?.startsWith("/bangladesh") || pathname?.startsWith("/bn")
-                    ? "bg-white text-[#1c88c6] shadow-sm"
-                    : "bg-white/10 text-white hover:bg-white/20"
-                }`}
-                title="বাংলাদেশী রোগীদের জন্য চোখের চিকিৎসা নির্দেশিকা"
-              >
-                <span>🇧🇩</span>
-                <span>বাংলা</span>
-              </Link>
             </nav>
 
             {/* Right Action: Book Appointment Button */}
@@ -194,18 +180,6 @@ export function Header({ onOpenBooking }: HeaderProps) {
                 </Link>
               );
             })}
-
-            <Link
-              href="/bangladesh/eye-care"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-between px-3.5 py-2.5 rounded-lg text-sm font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 transition-colors"
-            >
-              <span className="flex items-center gap-2">
-                <span>🇧🇩</span>
-                <span>বাংলাদেশী রোগীদের তথ্য (বাংলা)</span>
-              </span>
-              <ChevronDown className="w-4 h-4 -rotate-90" />
-            </Link>
           </div>
 
           <div className="pt-3 border-t border-sky-400/30 space-y-2">

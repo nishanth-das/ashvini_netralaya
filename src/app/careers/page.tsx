@@ -169,11 +169,6 @@ export default function CareersPage() {
       <section className="bg-gradient-to-r from-[#0a274c] via-[#0d3b70] to-[#1c88c6] text-white py-14 sm:py-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_60%)] pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 space-y-4 relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-semibold backdrop-blur-md border border-white/15">
-            <Sparkles className="w-3.5 h-3.5 text-sky-300" />
-            <span>Join Tripura&apos;s #1 Superspeciality Eye Hospital</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans">
             Build Your Healthcare Career at Ashvini Netralaya
           </h1>

@@ -19,6 +19,7 @@ import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
   { name: "HOME", href: "/" },
+  { name: "HOME 2", href: "/home-2" },
   { name: "ABOUT", href: "/about" },
   { name: "SERVICES", href: "/our-services-2" },
   { name: "SARVA DRISHTI YOJANA", href: "/sarva-drishti-yojana" },
@@ -37,41 +38,41 @@ export function Header({ onOpenBooking }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 w-full shadow-md">
       {/* 1. Top Institutional & Emergency Bar */}
-      <div className="bg-[#051226] text-slate-300 text-xs py-2 px-4 border-b border-slate-800/80">
+      <div className="bg-slate-50 text-slate-600 text-xs py-2 px-4 border-b border-slate-200/90">
         <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
           {/* Left: NABH Certification & Hospital Location */}
           <div className="flex items-center gap-3 flex-wrap justify-center md:justify-start">
-            <span className="inline-flex items-center gap-1.5 text-sky-400 font-semibold tracking-wide">
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-400 shrink-0" />
+            <span className="inline-flex items-center gap-1.5 text-sky-800 font-semibold tracking-wide">
+              <ShieldCheck className="w-3.5 h-3.5 text-sky-600 shrink-0" />
               <span>Tripura&apos;s 1st NABH-Accredited Superspeciality Eye Hospital</span>
             </span>
-            <span className="hidden lg:inline text-slate-600">•</span>
-            <span className="hidden lg:inline-flex items-center gap-1 text-slate-400">
-              <MapPin className="w-3 h-3 text-slate-500 shrink-0" />
+            <span className="hidden lg:inline text-slate-300">•</span>
+            <span className="hidden lg:inline-flex items-center gap-1 text-slate-500">
+              <MapPin className="w-3 h-3 text-slate-400 shrink-0" />
               <span>Bijoykumar Chowmuhani, Agartala</span>
             </span>
           </div>
 
           {/* Right: Live OPD Hours & Emergency Hotline */}
           <div className="flex items-center gap-4 text-[11px] sm:text-xs">
-            <div className="hidden sm:flex items-center gap-1.5 text-slate-300">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <div className="hidden sm:flex items-center gap-1.5 text-slate-600">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span>OPD: 9:00 AM – 7:00 PM</span>
             </div>
-            <span className="hidden sm:inline text-slate-700">|</span>
+            <span className="hidden sm:inline text-slate-300">|</span>
             <div className="flex items-center gap-3">
               <a
                 href={`tel:${siteConfig.phoneClean}`}
-                className="inline-flex items-center gap-1.5 text-white font-semibold hover:text-sky-300 transition-colors"
+                className="inline-flex items-center gap-1.5 text-slate-800 font-semibold hover:text-sky-600 transition-colors"
               >
-                <Phone className="w-3 h-3 text-sky-400" />
+                <Phone className="w-3 h-3 text-sky-600" />
                 <span>Helpline: {siteConfig.phone}</span>
               </a>
               <a
                 href={siteConfig.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden md:inline-flex items-center gap-1 text-[#25D366] hover:text-[#2fe673] font-semibold transition-colors"
+                className="hidden md:inline-flex items-center gap-1 text-emerald-600 hover:text-emerald-700 font-semibold transition-colors"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>WhatsApp Desk</span>

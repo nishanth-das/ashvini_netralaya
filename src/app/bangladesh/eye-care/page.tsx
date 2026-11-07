@@ -592,7 +592,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-3">
                 <div className="relative w-full h-44 rounded-xl overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.30.23-AM-2.jpeg"
+                    src="/images/G1.jpg"
                     alt="গ্লুকোমা চিকিৎসা ও ট্র্যাবেকুলেক্টমি"
                     fill
                     className="object-cover"
@@ -646,7 +646,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-3">
                 <div className="relative w-full h-44 rounded-xl overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.30.25-AM-1.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-3.10.23-AM-1.jpeg"
                     alt="কার্ল জাইস HD-OCT ও উন্নত ডায়াগনস্টিকস"
                     fill
                     className="object-cover"
@@ -673,7 +673,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-3">
                 <div className="relative w-full h-44 rounded-xl overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.30.24-AM-1.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-3.00.16-AM.jpeg"
                     alt="YAG লেজার ক্যাপসুলোটমি"
                     fill
                     className="object-cover"

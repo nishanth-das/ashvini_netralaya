@@ -177,10 +177,6 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                   <ShieldCheck className="w-3.5 h-3.5" />
                   <span>{service.category} Speciality</span>
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-[#20c997] border border-emerald-200/80 text-xs font-bold uppercase tracking-wider">
-                  <Award className="w-3.5 h-3.5" />
-                  <span>Tripura&apos;s 1st NABH Hospital</span>
-                </span>
               </div>
 
               <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-serif font-bold text-[#1e293b] tracking-tight leading-tight">

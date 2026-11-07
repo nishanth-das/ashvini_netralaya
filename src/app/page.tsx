@@ -49,102 +49,64 @@ export default function HomePage() {
       {/* Hero Banner */}
       <HeroBanner />
 
-      {/* Trust & Proof Bar */}
+      {/* Trust Stats Bar */}
       <section className="relative z-20 -mt-6 sm:-mt-10 max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xl shadow-sky-950/5 border border-slate-200/90">
-          <div className="flex flex-wrap items-center justify-between gap-3 pb-4 mb-5 border-b border-slate-100 text-xs">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span className="font-extrabold text-slate-900 uppercase tracking-wider text-[11px] font-sans">
-                Proven Clinical Excellence &amp; Patient Trust
-              </span>
-            </div>
-            <div className="flex items-center gap-2 text-slate-500 text-[11px] font-medium">
-              <ShieldCheck className="w-4 h-4 text-[#1c88c6]" />
-              <span>Tripura’s 1st &amp; Only NABH-Accredited Superspeciality Eye Hospital</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <div className="p-4 rounded-2xl bg-gradient-to-b from-sky-50/50 to-white border border-sky-100/80 hover:border-sky-200 hover:shadow-md transition-all duration-300 group">
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-11 h-11 rounded-xl bg-sky-50 text-[#1c88c6] border border-sky-100 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                  <Users className="w-5 h-5" />
-                </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-sky-100/70 text-[#1c88c6]">
-                  Northeast &amp; BD
-                </span>
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-5 sm:p-7">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+            <div className="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4 first:pt-0 first:pl-0">
+              <div className="w-12 h-12 rounded-xl bg-sky-50 text-[#1c88c6] flex items-center justify-center shrink-0">
+                <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
-                1.4 Lakhs+
-              </h3>
-              <p className="text-sm font-bold text-slate-800 mt-0.5">
-                Patients Treated
-              </p>
-              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Trusted by thousands of families across Tripura, Northeast India &amp; Bangladesh.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-100/80 hover:border-emerald-200 hover:shadow-md transition-all duration-300 group">
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-11 h-11 rounded-xl bg-emerald-50 text-[#0d9488] border border-emerald-100 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                  <Award className="w-5 h-5" />
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
+                  1.4 Lakhs+
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-100/70 text-emerald-700">
-                  Surgical Mastery
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
-                25,000+
-              </h3>
-              <p className="text-sm font-bold text-slate-800 mt-0.5">
-                Eye Surgeries Performed
-              </p>
-              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Stitchless Phaco, Vitreo-Retina, Glaucoma &amp; Paediatric ocular procedures.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-gradient-to-b from-rose-50/40 to-white border border-rose-100/80 hover:border-rose-200 hover:shadow-md transition-all duration-300 group">
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-11 h-11 rounded-xl bg-rose-50 text-rose-600 border border-rose-100 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                  <Heart className="w-5 h-5" />
-                </div>
-                <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-rose-100/70 text-rose-700">
-                  Sarva Drishti
-                </span>
-              </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
-                2,500+
-              </h3>
-              <p className="text-sm font-bold text-slate-800 mt-0.5">
-                Free Eye Surgeries Performed
-              </p>
-              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Subsidized &amp; free surgeries restoring vision for underprivileged communities.
-              </p>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-gradient-to-b from-amber-50/50 to-white border border-amber-100/80 hover:border-amber-200 hover:shadow-md transition-all duration-300 group">
-              <div className="flex items-center justify-between mb-3">
-                <div className="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 border border-amber-100 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                  <Star className="w-5 h-5 fill-amber-400 text-amber-500" />
-                </div>
-                <div className="flex items-center gap-1 text-amber-600 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-100/70">
-                  <Star className="w-3 h-3 fill-amber-500 text-amber-500" />
-                  <span>4.8 / 5.0 Rating</span>
+                <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                  Patients Treated
                 </div>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
-                4,100+
-              </h3>
-              <p className="text-sm font-bold text-slate-800 mt-0.5">
-                Positive Reviews
-              </p>
-              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                Exceptional patient feedback across Google, hospital desk &amp; healthcare directories.
-              </p>
+            </div>
+
+            <div className="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#0d9488] flex items-center justify-center shrink-0">
+                <Award className="w-6 h-6" />
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
+                  25,000+
+                </div>
+                <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                  Eye Surgeries Performed
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4">
+              <div className="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center shrink-0">
+                <Heart className="w-6 h-6" />
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
+                  2,500+
+                </div>
+                <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                  Free Eye Surgeries Performed
+                </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4 pt-4 sm:pt-0 sm:px-4 last:pr-0">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0">
+                <Star className="w-6 h-6 fill-amber-400 text-amber-500" />
+              </div>
+              <div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
+                  4,100+
+                </div>
+                <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                  Positive Reviews
+                </div>
+              </div>
             </div>
           </div>
         </div>

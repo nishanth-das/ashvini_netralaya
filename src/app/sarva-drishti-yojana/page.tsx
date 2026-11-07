@@ -25,10 +25,6 @@ export default function SarvaDrishtiYojanaPage() {
       {/* Banner */}
       <section className="bg-gradient-to-r from-[#1c88c6] to-[#0284c7] py-14 sm:py-20 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-widest text-sky-100 backdrop-blur-sm">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Community Healthcare Initiative</span>
-          </div>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans">
             Sarva Drishti Yojana
           </h1>

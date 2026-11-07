@@ -4,6 +4,10 @@ export const metadata: Metadata = {
   title: "Ashvini Netralaya | Premier Superspeciality Eye Hospital Agartala",
   description:
     "Tripura's premier NABH-accredited superspeciality eye hospital. Micro-incision cataract phaco, vitreo-retina, glaucoma, paediatric ophthalmology, and advanced surgical care in Agartala.",
+  robots: {
+    index: false,
+    follow: false,
+  },
   alternates: {
     canonical: "https://ashvinieyecare.in/home-2",
   },

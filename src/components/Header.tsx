@@ -19,7 +19,6 @@ import { siteConfig } from "@/data/siteConfig";
 
 const navItems = [
   { name: "HOME", href: "/" },
-  { name: "HOME 2", href: "/home-2" },
   { name: "ABOUT", href: "/about" },
   { name: "SERVICES", href: "/our-services-2" },
   { name: "SARVA DRISHTI YOJANA", href: "/sarva-drishti-yojana" },

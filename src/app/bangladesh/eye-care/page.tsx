@@ -23,6 +23,9 @@ import {
   Users,
   Navigation,
   Star,
+  Building2,
+  Banknote,
+  FileCheck2,
 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
@@ -104,7 +107,17 @@ export default function BangladeshEyeCarePage() {
     {
       question: "আগরতলায় হাসপাতালের কাছাকাছি থাকার ও হোটেলের সুবিধা কেমন?",
       answer:
-        "হাসপাতালটি আগরতলা শহরের মূল কেন্দ্র বিজয়কুমার চৌমুহনীতে অবস্থিত। হাসপাতালের ১ থেকে ২ কিলোমিটারের মধ্যে বহু মানসম্পন্ন বাজেট হোটেল, গেস্ট হাউস এবং হালাল ও বাংলা খাবারের ভালো রেস্তোরাঁ রয়েছে। আমাদের আন্তর্জাতিক রোগী ডেস্ক প্রয়োজনে নির্ভরযোগ্য হোটেল ও স্থানীয় যাতায়াতের তথ্য দিয়ে সহায়তা করে।",
+        "হাসপাতালটি আগরতলা শহরের মূল কেন্দ্র বিজয়কুমার চৌমুহনীতে অবস্থিত। হাসপাতালের হাঁটা দূরত্বে এবং ১ থেকে ২ কিলোমিটারের মধ্যে বহু মানসম্পন্ন বাজেট হোটেল, গেস্ট হাউস এবং ভালো রেস্তোরাঁ রয়েছে। আমাদের আন্তর্জাতিক রোগী সহায়তা ডেস্ক রোগী ও পরিবারের জন্য নিরাপদ, পরিচ্ছন্ন হোটেল বুকিংয়ে সরাসরি সহায়তা ও বিশেষ করপোরেট ডিসকাউন্ট নিশ্চিত করে।",
+    },
+    {
+      question: "টাকা ভাঙানো বা কারেন্সি এক্সচেঞ্জ (মানি এক্সচেঞ্জ) কীভাবে করব?",
+      answer:
+        "আখাউড়া আন্তর্জাতিক সীমান্ত এবং আগরতলা শহরে সরকারি রেজিস্টার্ড অনুমোদিত ফরেন এক্সচেঞ্জ (Authorized Money Changer) কাউন্টারে বাংলাদেশি টাকা (BDT) ভারতীয় রুপিতে (INR) রূপান্তর করার ক্ষেত্রে আমাদের আন্তর্জাতিক ডেস্ক সার্বক্ষণিক সঠিক গাইডেন্স প্রদান করে। কোনো দালাল ছাড়াই দৈনিক সরকারি ব্যাংক রেটে মুদ্রা বিনিময় করা যায়। এ ছাড়া হাসপাতালে আন্তর্জাতিক ডেবিট/ক্রেডিট কার্ডের মাধ্যমেও পেমেন্ট করা যায়।",
+    },
+    {
+      question: "চিকিৎসা শেষে দেশে ফেরার সময় বর্ডারে কী কী ডকুমেন্টেশন লাগবে?",
+      answer:
+        "রোগী ও তার পরিবারের কোনো প্রকার হয়রানি যাতে না হয়, সেজন্য চিকিৎসা শেষে হাসপাতাল থেকে সকল প্রয়োজনীয় কাগজপত্র যেমন: চিকিৎসকের মূল প্রেসক্রিপশন, আইটেমাইজড রসিদ, হাসপাতালের মূল বিল, বিস্তারিত ডিসচার্জ সামারি এবং বর্ডার ইমিগ্রেশনের জন্য অনুমোদিত 'Fit to Travel' মেডিকেল সার্টিফিকেট প্রস্তুত করে রোগীর হাতে তুলে দেওয়া হয়। এর ফলে আখাউড়া-আগরতলা কাস্টমস ও ইমিগ্রেশন চেকপোস্টে কোনো সমস্যা ছাড়াই খুব সহজে বাংলাদেশে প্রবেশ করা যায়।",
     },
   ];
 
@@ -215,7 +228,7 @@ export default function BangladeshEyeCarePage() {
                 <p className="text-xs sm:text-sm font-bold tracking-widest uppercase text-sky-300">
                   বাংলাদেশ ও ত্রিপুরার রোগীদের আস্থা
                 </p>
-                <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-bold leading-[1.25] tracking-tight">
+                <h1 className="text-3xl sm:text-4xl lg:text-[46px] font-bold leading-[1.3] tracking-tight">
                   বাংলাদেশ থেকে মাত্র কয়েক ঘণ্টায় আগরতলায়{" "}
                   <span className="text-[#38bdf8] underline decoration-sky-400/40 underline-offset-8">
                     বিশ্বমানের চোখের চিকিৎসা
@@ -224,27 +237,27 @@ export default function BangladeshEyeCarePage() {
               </div>
 
               {/* Sub-description */}
-              <p className="text-sm sm:text-base text-slate-200 leading-relaxed max-w-2xl font-normal">
-                ঢাকা, কুমিল্লা, ব্রাহ্মণবাড়িয়া ও সিলেট থেকে অতি সহজে সড়ক বা রেলপথে আখাউড়া সীমান্ত হয়ে আগরতলা পৌঁছান। আন্তর্জাতিক মানের সেলাইবিহীন ফ্যাকো ছানি অপারেশন, আধুনিক রেটিনা সার্জারি, গ্লুকোমা ও শিশুদের চোখের সম্পূর্ণ চিকিৎসা—মাতৃভাষা বাংলায় উষ্ণ ও আন্তরিক সেবায়।
+              <p className="text-base sm:text-lg text-sky-100/95 leading-[1.85] max-w-2xl font-normal">
+                ঢাকা, কুমিল্লা, ব্রাহ্মণবাড়িয়া ও সিলেট থেকে অতি সহজে সড়ক বা রেলপথে আখাউড়া সীমান্ত হয়ে আগরতলা পৌঁছান। হাসপাতালে পাবেন সরকারি অনুমোদিত মেডিকেল ভিসা ইনভাইটেশন লেটার, হোটেল ও আবাসন বুকিং সহায়তা, নিরাপদ মুদ্রা বিনিময় (মানি এক্সচেঞ্জ) গাইডেন্স এবং আন্তর্জাতিক মানের সেলাইবিহীন ফ্যাকো ছানি ও রেটিনা সার্জারি—মাতৃভাষা বাংলায় উষ্ণ ও আন্তরিক সেবায়।
               </p>
 
               {/* Travel Time Pills */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
-                <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
-                  <span className="block text-[11px] text-sky-200 font-semibold">ঢাকা থেকে</span>
-                  <span className="text-xs sm:text-sm font-bold text-white">৩ – ৪ ঘণ্টা</span>
+                <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
+                  <span className="block text-xs text-sky-200 font-medium">ঢাকা থেকে</span>
+                  <span className="text-sm sm:text-base font-bold text-white">৩ – ৪ ঘণ্টা</span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
-                  <span className="block text-[11px] text-sky-200 font-semibold">কুমিল্লা থেকে</span>
-                  <span className="text-xs sm:text-sm font-bold text-white">১ – ১.৫ ঘণ্টা</span>
+                <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
+                  <span className="block text-xs text-sky-200 font-medium">কুমিল্লা থেকে</span>
+                  <span className="text-sm sm:text-base font-bold text-white">১ – ১.৫ ঘণ্টা</span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
-                  <span className="block text-[11px] text-sky-200 font-semibold">ব্রাহ্মণবাড়িয়া</span>
-                  <span className="text-xs sm:text-sm font-bold text-white">৪৫ – ৬০ মিনিট</span>
+                <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
+                  <span className="block text-xs text-sky-200 font-medium">ব্রাহ্মণবাড়িয়া</span>
+                  <span className="text-sm sm:text-base font-bold text-white">৪৫ – ৬০ মিনিট</span>
                 </div>
-                <div className="p-2.5 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
-                  <span className="block text-[11px] text-sky-200 font-semibold">সিলেট থেকে</span>
-                  <span className="text-xs sm:text-sm font-bold text-white">৩ ঘণ্টা</span>
+                <div className="p-3 rounded-xl bg-white/10 backdrop-blur-sm border border-white/15 text-center">
+                  <span className="block text-xs text-sky-200 font-medium">সিলেট থেকে</span>
+                  <span className="text-sm sm:text-base font-bold text-white">৩ ঘণ্টা</span>
                 </div>
               </div>
 
@@ -254,15 +267,15 @@ export default function BangladeshEyeCarePage() {
                   href={whatsappPreFilledUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm rounded-full shadow-lg shadow-emerald-950/40 transition-all transform active:scale-95"
+                  className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base rounded-full shadow-lg shadow-emerald-950/40 transition-all transform active:scale-95"
                 >
                   <MessageCircle className="w-4 h-4" />
-                  <span>হোয়াটসঅ্যাপে রিপোর্ট পাঠান ও পরামর্শ নিন</span>
+                  <span>হোয়াটসঅ্যাপে রিপোর্ট পাঠান ও ভিসা সহায়তা নিন</span>
                 </a>
 
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-xs sm:text-sm rounded-full backdrop-blur-md transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-sm sm:text-base rounded-full backdrop-blur-md transition-colors"
                 >
                   <Phone className="w-4 h-4 text-sky-300" />
                   <span>সরাসরি কল: {siteConfig.phone}</span>
@@ -285,33 +298,37 @@ export default function BangladeshEyeCarePage() {
                 </div>
 
                 {/* Overlaid Highlight Points */}
-                <div className="p-5 sm:p-6 space-y-3 bg-slate-900/90 backdrop-blur-md border-t border-white/10">
+                <div className="p-5 sm:p-6 space-y-3.5 bg-slate-900/95 backdrop-blur-md border-t border-white/10">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-700/60">
                     <div>
-                      <p className="font-bold text-sm text-white">অশ্বিনী নেত্রালয়</p>
+                      <p className="font-bold text-base text-white">অশ্বিনী নেত্রালয়</p>
                       <p className="text-xs text-sky-300">বিজয়কুমার চৌমুহনী, আগরতলা</p>
                     </div>
-                    <span className="px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 text-[11px] font-bold border border-sky-400/30">
+                    <span className="px-2.5 py-1 rounded bg-sky-500/20 text-sky-300 text-xs font-bold border border-sky-400/30">
                       NABH মানসম্মত
                     </span>
                   </div>
 
-                  <ul className="space-y-2 text-xs text-slate-300">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0" />
-                      <span>মেডিকেল ভিসা ইনভাইটেশন লেটার প্রদান সুবিধা</span>
+                  <ul className="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0 mt-0.5" />
+                      <span>মেডিকেল ভিসা ইনভাইটেশন লেটার প্রদান সুবিধা (২৪ ঘণ্টায়)</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0" />
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0 mt-0.5" />
+                      <span>নিকটবর্তী হোটেল ও পারিবারিক গেস্ট হাউস বুকিং সহায়তা</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0 mt-0.5" />
+                      <span>বৈধ কারেন্সি এক্সচেঞ্জ (BDT থেকে INR) সঠিক গাইডেন্স</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0 mt-0.5" />
+                      <span>বর্ডারে সহজে প্রত্যাবর্তনের জন্য ফিটনেস ও ডিসচার্জ ফাইল</span>
+                    </li>
+                    <li className="flex items-start gap-2.5">
+                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0 mt-0.5" />
                       <span>সেলাইবিহীন ব্যথাহীন ফ্যাকো ছানি ও ডে-কেয়ার ডিসচার্জ</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0" />
-                      <span>২৫জি/২৭জি অত্যাধুনিক ভিট্রেও-রেটিনা সার্জারি ইউনিট</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#20c997] shrink-0" />
-                      <span>কার্ল জাইস (Carl Zeiss) ও অ্যালকন (Alcon) আন্তর্জাতিক প্রযুক্তি</span>
                     </li>
                   </ul>
                 </div>
@@ -321,17 +338,196 @@ export default function BangladeshEyeCarePage() {
         </div>
       </section>
 
+      {/* 4 Pillars of Bangladeshi Patient Assistance */}
+      <section className="py-16 sm:py-24 bg-gradient-to-b from-sky-50/70 via-white to-slate-50 border-b border-sky-100">
+        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100/90 px-4 py-1.5 rounded-full inline-block">
+              ১০০% ঝামেলামুক্ত আন্তর্জাতিক সেবা
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-[38px] font-bold text-slate-900 tracking-tight leading-[1.3]">
+              বাংলাদেশী রোগীদের জন্য আমাদের বিশেষ ৪টি সহায়তা সুবিধা
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 leading-[1.8] font-normal">
+              ভিসা প্রসেসিং থেকে শুরু করে সীমান্ত পারাপার, নিরাপদ আবাসন ও মুদ্রা বিনিময়—আপনার চিকিৎসার প্রতিটি পদক্ষেপে পাশে থাকবে অশ্বিনী নেত্রালয়ের ডেডিকেটেড পেশেন্ট কেয়ার টিম:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            {/* Card 1: Visa Support */}
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-sky-200/80 shadow-md hover:shadow-xl transition-all duration-300 space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-sky-50 text-[#1c88c6] flex items-center justify-center font-bold text-2xl group-hover:bg-[#1c88c6] group-hover:text-white transition-colors">
+                  <FileCheck2 className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                  ১. অফিসিয়াল মেডিকেল ভিসা ও ইনভাইটেশন লেটার সহায়তা
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  বাংলাদেশী রোগীদের ভিসা প্রাপ্তি নিশ্চিত করতে অশ্বিনী নেত্রালয় দ্রুততম সময়ে হাসপাতালের অফিসিয়াল প্যাডে স্বাক্ষরিত প্রাতিষ্ঠানিক আমন্ত্রণ পত্র (Medical Visa Invitation Letter) প্রদান করে।
+                </p>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>রোগী এবং মেডিকেল অ্যাটেনডেন্ট (সহযাত্রী) উভয়ের জন্য অনুমোদিত ভিসা লেটার</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>ভারতীয় ভিসা আবেদন কেন্দ্রে (IVAC) দ্রুত অ্যাপয়েন্টমেন্ট ও ভিসা গ্রহণের পূর্ণাঙ্গ গাইডেন্স</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>শুধুমাত্র পাসপোর্ট কপি ও প্রেসক্রিপশন হোয়াটসঅ্যাপে পাঠিয়ে ২৪ ঘণ্টার মধ্যে লেটার সংগ্রহ</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-4 border-t border-slate-100">
+                <a
+                  href={whatsappPreFilledUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#1c88c6] hover:text-sky-700 transition-colors"
+                >
+                  <span>হোয়াটসঅ্যাপে ভিসা লেটারের জন্য আবেদন করুন</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2: Hotel & Accommodation */}
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-emerald-200/80 shadow-md hover:shadow-xl transition-all duration-300 space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-2xl group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                  <Building2 className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                  ২. নিরাপদ হোটেল ও আবাসন ব্যবস্থা সহায়তা
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  আগরতলায় রোগী ও তার সাথে আসা পরিবারের সদস্যদের আরামদায়ক অবস্থানের জন্য হাসপাতালের হাঁটা দূরত্বে এবং ২ থেকে ৫ মিনিটের মধ্যে বিশ্বস্ত হোটেল ও গেস্ট হাউস বুকিংয়ে সরাসরি সহযোগিতা প্রদান করা হয়।
+                </p>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>এসি ও নন-এসি পরিষ্কার-পরিচ্ছন্ন কক্ষ এবং বাংলাদেশী রোগীদের জন্য বিশেষ সাশ্রয়ী করপোরেট রেট</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>লিফট ও হুইলচেয়ার সুবিধা সম্পন্ন হোটেল যাতে বয়স্ক রোগীদের চলাচলে কোনো কষ্ট না হয়</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>হোটেলের নিকটেই স্বাস্থ্যসম্মত পারিবারিক রেস্তোরাঁ ও বাংলা খাবারের সহজলভ্যতা</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-4 border-t border-slate-100">
+                <a
+                  href={whatsappPreFilledUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors"
+                >
+                  <span>আবাসন ও হোটেল বুকিংয়ে সহায়তা নিন</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3: Currency Exchange */}
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-amber-200/80 shadow-md hover:shadow-xl transition-all duration-300 space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-2xl group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                  <Banknote className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                  ৩. নিরাপদ মুদ্রা বিনিময় ও মানি এক্সচেঞ্জ গাইডেন্স
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  টাকা পয়সা লেনদেনের কোনো ঝামেলা যেন না হয় সেজন্য আখাউড়া স্থলবন্দর ও আগরতলা শহরে সরকারি রেজিস্টার্ড বৈধ ফরেন এক্সচেঞ্জ কাউন্টারে বাংলাদেশি টাকা (BDT) ভারতীয় রুপিতে (INR) রূপান্তরের সার্বক্ষণিক গাইডেন্স দেওয়া হয়।
+                </p>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>অননুমোদিত দালাল ছাড়াই দৈনিক সঠিক ও সর্বোচ্চ ব্যাংক এক্সচেঞ্জ রেট নিশ্চিতকরণ</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>ভারতীয় নগদ রুপি (Cash INR)-র পাশাপাশি আন্তর্জাতিক ক্রেডিট/ডেবিট কার্ড গ্রহণ</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>চিকিৎসার প্রতিটি খরচের জন্য সঠিক মানি রসিদ ও স্বচ্ছ আইটেমাইজড বিল প্রদান</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-4 border-t border-slate-100">
+                <a
+                  href={whatsappPreFilledUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-600 hover:text-amber-700 transition-colors"
+                >
+                  <span>মুদ্রা বিনিময় নিয়মাবলী জেনে নিন</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
+            {/* Card 4: Border Documentation */}
+            <div className="bg-white rounded-3xl p-7 sm:p-9 border border-indigo-200/80 shadow-md hover:shadow-xl transition-all duration-300 space-y-5 flex flex-col justify-between group">
+              <div className="space-y-4">
+                <div className="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-2xl group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                  <ShieldCheck className="w-7 h-7" />
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-snug">
+                  ৪. সম্পূর্ণ মেডিকেল ডকুমেন্টেশন ও বর্ডার ইমিগ্রেশন সাপোর্ট
+                </h3>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  চিকিৎসা শেষে দেশে ফেরার সময় আখাউড়া-আগরতলা আন্তর্জাতিক চেকপোস্টে (ICP) কাস্টমস ও ইমিগ্রেশন চেকিংয়ে যাতে রোগীর কোনো প্রকার জবাবদিহি বা হয়রানি না হয়, সেজন্য প্রয়োজনীয় সকল নথিপত্র হাসপাতাল কর্তৃপক্ষ প্রস্তুত করে দেয়।
+                </p>
+                <ul className="space-y-2.5 text-xs sm:text-sm text-slate-700 pt-2 border-t border-slate-100">
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>চিকিৎসকের অফিসিয়াল সীল ও রেজিস্ট্রেশন নম্বর সহ বিস্তারিত ডিসচার্জ সামারি (Discharge Summary)</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>সীমান্ত পারাপারের জন্য হাসপাতাল কর্তৃক স্বাক্ষরিত বৈধ &quot;Fit to Travel&quot; মেডিকেল সার্টিফিকেট</span>
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
+                    <span>পরবর্তী ফলো-আপ ও জরুরি প্রয়োজনে প্রেসক্রিপশন ও ওষুধ ব্যবহারের সম্পূর্ণ লিখিত নির্দেশিকা</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="pt-4 border-t border-slate-100">
+                <a
+                  href={whatsappPreFilledUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-indigo-600 hover:text-indigo-700 transition-colors"
+                >
+                  <span>বর্ডার সহায়তা হেল্পডেস্কে কথা বলুন</span>
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Key Advantages */}
       <section className="py-16 sm:py-20 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3 py-1 rounded-full">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3.5 py-1.5 rounded-full">
               সুবিধা ও সাশ্রয়
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               কলকাতা বা চেন্নাইয়ের বদলে আগরতলা কেন সেরা পছন্দ?
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-[1.8] font-normal">
               বাংলাদেশী রোগীদের জন্য চোখের উন্নত চিকিৎসা গ্রহণের ক্ষেত্রে দূরবর্তী শহরের বদলে আগরতলা অশ্বিনী নেত্রালয় বেছে নেওয়ার বাস্তবসম্মত কারণসমূহ:
             </p>
           </div>
@@ -342,10 +538,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-sky-50 text-[#1c88c6] flex items-center justify-center font-bold text-xl">
                 <Compass className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 সময় ও দূরত্বের বিশাল সাশ্রয়
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 কলকাতায় যাওয়ার জন্য ব্যয়বহুল বিমান টিকিট বা দীর্ঘ ট্রেনের ক্লান্তিকর জার্নি করতে হয় না। ঢাকা বা কুমিল্লা থেকে মাত্র কয়েক ঘণ্টার ব্যবধানে আখাউড়া সীমান্ত পেরিয়ে সহজেই হাসপাতালে পৌঁছানো যায়।
               </p>
             </div>
@@ -355,10 +551,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#20c997] flex items-center justify-center font-bold text-xl">
                 <ShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 NABH স্বীকৃত নিরাপত্তা ও প্রযুক্তি
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 অশ্বিনী নেত্রালয় ত্রিপুরার প্রথম ও একমাত্র NABH স্বীকৃত সুপারস্পেশালিটি হাসপাতাল। এখানে রয়েছে সম্পূর্ণ ইনফেকশন-ফ্রি ল্যামিনার ফ্লো মডিউলার ওটি, কার্ল জাইস ও অ্যালকন সেন্টুরিয়ন সহ শীর্ষ প্রযুক্তি।
               </p>
             </div>
@@ -368,10 +564,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-xl">
                 <Heart className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 মাতৃভাষা বাংলায় ১০০% আন্তরিক সেবা
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 কোনো ভাষাগত দূরত্ব নেই। আমাদের সকল শীর্ষ চক্ষু বিশেষজ্ঞ, মেডিকেল স্টাফ ও নার্সরা সাবলীলভাবে বাংলায় কথা বলেন। রোগী ও পরিবার নিজেদের মনের সব প্রশ্ন নিঃসংকোচে আলোচনা করতে পারেন।
               </p>
             </div>
@@ -381,10 +577,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-sky-50 text-[#1c88c6] flex items-center justify-center font-bold text-xl">
                 <Clock className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 একই দিনে পরীক্ষা ও ডে-কেয়ার সার্জারি
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 দীর্ঘ সময় হাসপাতালে ভর্তি থাকার প্রয়োজন হয় না। ফ্যাকো ছানি অপারেশন মাত্র ১০-১৫ মিনিটে সম্পন্ন হয় এবং রোগীকে ২ ঘণ্টার মধ্যে হোটেল বা বাসায় ফিরে যাওয়ার অনুমতি দেওয়া হয়।
               </p>
             </div>
@@ -394,10 +590,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-xl">
                 <FileText className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 মেডিকেল ভিসা সহায়তা পত্র
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 রোগীদের দ্রুত ভিসা প্রসেসিংয়ের জন্য হাসপাতাল থেকে প্রাতিষ্ঠানিক মেডিকেল ইনভাইটেশন লেটার প্রদান করা হয়, যা দিয়ে নিকটস্থ ভারতীয় ভিসা অ্যাপ্লিকেশন সেন্টারে (IVAC) আবেদন করা সম্ভব।
               </p>
             </div>
@@ -407,10 +603,10 @@ export default function BangladeshEyeCarePage() {
               <div className="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center font-bold text-xl">
                 <Users className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 স্বচ্ছ ব্যয় ও সাশ্রয়ী প্যাকেজ
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 মেট্রো শহরের তুলনায় আগরতলায় বাসস্থান, হোটেল, খাবার ও সামগ্রিক চিকিৎসার খরচ অনেক সাশ্রয়ী। কোনো প্রকার অনৈতিক মধ্যস্বত্বভোগী বা লুকানো চার্জ ছাড়াই সরাসরি স্বচ্ছ চিকিৎসা সেবা।
               </p>
             </div>
@@ -422,13 +618,13 @@ export default function BangladeshEyeCarePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-50 px-3 py-1 rounded-full border border-sky-100">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100">
               ধাপভিত্তিক নির্দেশিকা
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               বাংলাদেশ থেকে চিকিৎসার জন্য আসার ৫টি সহজ ধাপ
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-[1.8] font-normal">
               কোনো প্রকার বিভ্রান্তি ছাড়াই আপনার চোখ চিকিৎসার সঠিক পরিকল্পনা সম্পন্ন করুন:
             </p>
           </div>
@@ -439,13 +635,13 @@ export default function BangladeshEyeCarePage() {
               <div className="absolute -left-[35px] sm:-left-[51px] top-0 w-8 h-8 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-md">
                 ১
               </div>
-              <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider">
+              <span className="text-xs sm:text-sm font-bold text-[#1c88c6] uppercase tracking-wider">
                 ধাপ ১: প্রাথমিক মূল্যায়ন
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 হোয়াটসঅ্যাপে আপনার বর্তমান চোখের প্রেসক্রিপশন ও রিপোর্ট পাঠান
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 আপনার বিদ্যমান চিকিৎসকের প্রেসক্রিপশন, চোখ পরীক্ষার রিপোর্ট বা চশমার পাওয়ার পরিষ্কার ছবি তুলে আমাদের ডেডিকেটেড হোয়াটসঅ্যাপ নম্বরে (+91 92336 17885) পাঠান।
               </p>
             </div>
@@ -455,13 +651,13 @@ export default function BangladeshEyeCarePage() {
               <div className="absolute -left-[35px] sm:-left-[51px] top-0 w-8 h-8 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-md">
                 ২
               </div>
-              <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider">
+              <span className="text-xs sm:text-sm font-bold text-[#1c88c6] uppercase tracking-wider">
                 ধাপ ২: ডাক্তারের পর্যালোচনা
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 সিনিয়র বিশেষজ্ঞের পরামর্শ ও আনুমানিক চিকিৎসা খরচের বিবরণ
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
                 আমাদের সিনিয়র চক্ষু সার্জন আপনার রিপোর্ট পর্যালোচনা করে প্রয়োজনীয় চিকিৎসা পদ্ধতি (যেমন: ফ্যাকো ছানি অপারেশন, রেটিনা ইনজেকশন বা ডায়াগনস্টিকস) এবং আনুমানিক খরচ জানিয়ে দেবেন।
               </p>
             </div>
@@ -471,14 +667,14 @@ export default function BangladeshEyeCarePage() {
               <div className="absolute -left-[35px] sm:-left-[51px] top-0 w-8 h-8 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-md">
                 ৩
               </div>
-              <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider">
+              <span className="text-xs sm:text-sm font-bold text-[#1c88c6] uppercase tracking-wider">
                 ধাপ ৩: ভিসা সহায়তা
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                 হাসপাতালের অফিশিয়াল মেডিকেল ভিসা ইনভাইটেশন লেটার সংগ্রহ
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                রোগী ও তার সহযাত্রীর পাসপোর্টের ফটোকপি পাঠালে আমরা হাসপাতাল প্যাডে স্বাক্ষরিত মেডিকেল ভিসা আমন্ত্রণ পত্র প্রদান করব, যা দিয়ে সহজেই মেডিকেল ভিসার আবেদন সম্পন্ন করা যাবে।
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                রোগী ও তার সহযাত্রীর পাসপোর্টের ফটোকপি পাঠালে আমরা হাসপাতাল প্যাডে স্বাক্ষরিত মেডিকেল ভিসা আমন্ত্রণ পত্র (২৪ ঘণ্টার মধ্যে) প্রদান করব, যা দিয়ে সহজেই মেডিকেল ভিসার আবেদন সম্পন্ন করা যাবে।
               </p>
             </div>
 
@@ -487,14 +683,14 @@ export default function BangladeshEyeCarePage() {
               <div className="absolute -left-[35px] sm:-left-[51px] top-0 w-8 h-8 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-md">
                 ৪
               </div>
-              <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider">
-                ধাপ ৪: আগরতলায় আগমন
+              <span className="text-xs sm:text-sm font-bold text-[#1c88c6] uppercase tracking-wider">
+                ধাপ ৪: আগরতলায় আগমন ও সহায়তা
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                আখাউড়া-আগরতলা বর্ডার অতিক্রম করে সরাসরি হাসপাতালে পৌঁছানো
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+                বর্ডার অতিক্রম, কারেন্সি এক্সচেঞ্জ ও হোটেল চেক-ইন
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                আখাউড়া সীমান্ত পার হয়ে আগরতলা ইন্টিগ্রেটেড চেকপোস্ট থেকে যেকোনো অটোরিকশা বা ট্যাক্সিতে মাত্র ১৫-২০ মিনিটে বিজয়কুমার চৌমুহনীতে অশ্বিনী নেত্রালয়ে পৌঁছাতে পারবেন।
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                আখাউড়া সীমান্ত পার হয়ে আগরতলা ইন্টিগ্রেটেড চেকপোস্ট থেকে মাত্র ১৫ মিনিটে হাসপাতালে পৌঁছানো যায়। আমাদের টিম বর্ডার পারাপার, রেজিস্টার্ড মানি এক্সচেঞ্জে টাকা রূপান্তর এবং নিরাপদ হোটেল চেক-ইনে সম্পূর্ণ সহযোগিতা করবে।
               </p>
             </div>
 
@@ -503,14 +699,14 @@ export default function BangladeshEyeCarePage() {
               <div className="absolute -left-[35px] sm:-left-[51px] top-0 w-8 h-8 rounded-full bg-[#20c997] text-white font-bold flex items-center justify-center text-xs shadow-md">
                 ৫
               </div>
-              <span className="text-xs font-bold text-[#20c997] uppercase tracking-wider">
-                ধাপ ৫: সফল চিকিৎসা ও প্রত্যাবর্তন
+              <span className="text-xs sm:text-sm font-bold text-[#20c997] uppercase tracking-wider">
+                ধাপ ৫: সফল চিকিৎসা ও বর্ডার ডকুমেন্টেশন
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-slate-900">
-                উন্নত চিকিৎসা গ্রহণ, ফলো-আপ চেকআপ এবং সুস্থ হয়ে বাড়ি ফেরা
+              <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+                উন্নত চিকিৎসা গ্রহণ, সম্পূর্ণ ডিসচার্জ ফাইল ও ফিটনেস সার্টিফিকেট নিয়ে প্রত্যাবর্তন
               </h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                পেইনলেস আধুনিক চিকিৎসা বা ছানি অপারেশনের পর সংক্ষিপ্ত বিশ্রাম শেষে পরদিনই ফলো-আপ পরীক্ষা করিয়ে আপনি স্বাচ্ছন্দ্যে দেশে ফিরে যেতে পারেন।
+              <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                আধুনিক চিকিৎসা বা ডে-কেয়ার ছানি অপারেশনের পর সংক্ষিপ্ত বিশ্রাম ও ফলো-আপ সম্পন্ন হয়। বর্ডার ইমিগ্রেশনের জন্য সম্পূর্ণ আইটেমাইজড রসিদ, ডিসচার্জ সামারি ও &quot;Fit to Travel&quot; মেডিকেল সার্টিফিকেট বুঝিয়ে দেওয়া হয় যাতে নির্বিঘ্নে দেশে ফিরতে পারেন।
               </p>
             </div>
           </div>
@@ -702,66 +898,74 @@ export default function BangladeshEyeCarePage() {
       <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-50 px-3 py-1 rounded-full border border-sky-100">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-100">
               যাতায়াত ও রুট নির্দেশিকা
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               বাংলাদেশ থেকে কীভাবে আসবেন?
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-[1.8] font-normal">
               আখাউড়া-আগরতলা সীমান্ত পথ অত্যন্ত সুগম ও দ্রুত যাতায়াতযোগ্য:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3">
-              <div className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                <span>🚆 ঢাকা থেকে</span>
+            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+                  <span>🚆 ঢাকা থেকে</span>
+                </div>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  কমলাপুর রেল স্টেশন থেকে আন্তঃনগর ট্রেনে (মহানগর, তূর্ণা বা উপকূল এক্সপ্রেস) সরাসরি আখাউড়া জংশন। এরপর অটোরিকশায় আখাউড়া বর্ডার। সীমান্ত পার হলেই আগরতলা।
+                </p>
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                কমলাপুর রেল স্টেশন থেকে আন্তঃনগর ট্রেনে (মহানগর, তূর্ণা বা উপকূল এক্সপ্রেস) সরাসরি আখাউড়া জংশন। এরপর অটোরিকশায় আখাউড়া বর্ডার। সীমান্ত পার হলেই আগরতলা।
-              </p>
-              <div className="pt-2 text-[11px] font-bold text-[#1c88c6]">মোট সময়: ৩ – ৪ ঘণ্টা</div>
+              <div className="pt-3 border-t border-sky-100/80 text-xs sm:text-sm font-bold text-[#1c88c6]">মোট সময়: ৩ – ৪ ঘণ্টা</div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3">
-              <div className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                <span>🚗 কুমিল্লা থেকে</span>
+            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+                  <span>🚗 কুমিল্লা থেকে</span>
+                </div>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  কুমিল্লা শহর বা কান্দিরপাড় থেকে সিএনজি বা বাসে সরাসরি আখাউড়া সীমান্ত চেকপোস্টে পৌঁছানো যায়। এটি সবচেয়ে নিকটবর্তী রুট।
+                </p>
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                কুমিল্লা শহর বা কান্দিরপাড় থেকে সিএনজি বা বাসে সরাসরি আখাউড়া সীমান্ত চেকপোস্টে পৌঁছানো যায়। এটি সবচেয়ে নিকটবর্তী রুট।
-              </p>
-              <div className="pt-2 text-[11px] font-bold text-[#1c88c6]">মোট সময়: ১ – ১.৫ ঘণ্টা</div>
+              <div className="pt-3 border-t border-sky-100/80 text-xs sm:text-sm font-bold text-[#1c88c6]">মোট সময়: ১ – ১.৫ ঘণ্টা</div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3">
-              <div className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                <span>🚌 ব্রাহ্মণবাড়িয়া থেকে</span>
+            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+                  <span>🚌 ব্রাহ্মণবাড়িয়া থেকে</span>
+                </div>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  ব্রাহ্মণবাড়িয়া জেলা সদর থেকে লোকাল বাস বা সিএনজিতে মাত্র ২০-২৫ কিলোমিটার দূরত্বে অবস্থিত আখাউড়া আন্তর্জাতিক বর্ডার।
+                </p>
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                ব্রাহ্মণবাড়িয়া জেলা সদর থেকে লোকাল বাস বা সিএনজিতে মাত্র ২০-২৫ কিলোমিটার দূরত্বে অবস্থিত আখাউড়া আন্তর্জাতিক বর্ডার।
-              </p>
-              <div className="pt-2 text-[11px] font-bold text-[#1c88c6]">মোট সময়: ৪৫ – ৬০ মিনিট</div>
+              <div className="pt-3 border-t border-sky-100/80 text-xs sm:text-sm font-bold text-[#1c88c6]">মোট সময়: ৪৫ – ৬০ মিনিট</div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3">
-              <div className="text-lg font-bold text-slate-900 flex items-center gap-2">
-                <span>🚖 আগরতলা শহর থেকে</span>
+            <div className="p-6 rounded-2xl bg-sky-50/70 border border-sky-100 space-y-3 flex flex-col justify-between">
+              <div>
+                <div className="text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+                  <span>🚖 আগরতলা শহর থেকে</span>
+                </div>
+                <p className="text-sm sm:text-base text-slate-600 leading-[1.85]">
+                  আখাউড়া ইন্টিগ্রেটেড চেকপোস্ট (বর্ডার) থেকে যেকোনো রিকশা বা অটোরিকশায় &quot;বিজয়কুমার চৌমুহনী, অশ্বিনী নেত্রালয়&quot; বললেই নামিয়ে দেবে।
+                </p>
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                আখাউড়া ইন্টিগ্রেটেড চেকপোস্ট (বর্ডার) থেকে যেকোনো রিকশা বা অটোরিকশায় &quot;বিজয়কুমার চৌমুহনী, অশ্বিনী নেত্রালয়&quot; বললেই নামিয়ে দেবে।
-              </p>
-              <div className="pt-2 text-[11px] font-bold text-[#1c88c6]">বর্ডার থেকে দূরত্ব: ৬ কিমি (১৫ মিনিট)</div>
+              <div className="pt-3 border-t border-sky-100/80 text-xs sm:text-sm font-bold text-[#1c88c6]">বর্ডার থেকে দূরত্ব: ৬ কিমি (১৫ মিনিট)</div>
             </div>
           </div>
 
           {/* Visa Disclaimer Alert Box */}
-          <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 text-xs sm:text-sm space-y-2">
-            <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base">
+          <div className="p-6 rounded-2xl bg-amber-50 border border-amber-200/90 text-amber-950 text-sm space-y-2.5">
+            <div className="flex items-center gap-2 font-bold text-amber-900 text-base">
               <AlertCircle className="w-5 h-5 text-amber-600 shrink-0" />
               <span>জরুরি ভিসা ও প্রশাসনিক তথ্য</span>
             </div>
-            <p className="leading-relaxed text-slate-700">
+            <p className="leading-[1.85] text-slate-700">
               ভারতীয় মেডিকেল ভিসা সংক্রান্ত নিয়মাবলী ও আবেদন প্রক্রিয়ার জন্য শুধুমাত্র ভারত সরকারের আনুষ্ঠানিক ভিসা পোর্টাল (Indian Visa Online:{" "}
               <a
                 href="https://indianvisaonline.gov.in"
@@ -781,20 +985,20 @@ export default function BangladeshEyeCarePage() {
       <section className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/80">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3 py-1 rounded-full">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3.5 py-1.5 rounded-full">
               অভিজ্ঞ চিকিৎসক দল
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               অশ্বিনী নেত্রালয়ের নেতৃত্বদানকারী চক্ষু বিশেষজ্ঞগণ
             </h2>
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 leading-[1.8] font-normal">
               ভারতের শীর্ষ চক্ষু গবেষণা কেন্দ্র ও মেডিকেল কলেজ থেকে উচ্চতর ডিগ্রি ও ফেলোশিপধারী সার্জনদের আন্তরিক পরিচর্যা:
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Doctor 1 */}
-            <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm text-center space-y-3">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-center space-y-3.5">
               <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
                   src="/images/Dr-anurag.jpg"
@@ -803,17 +1007,17 @@ export default function BangladeshEyeCarePage() {
                   className="object-cover"
                 />
               </div>
-              <div>
-                <h3 className="font-bold text-base text-slate-900">ডাঃ অনুরাগ মজুমদার</h3>
-                <p className="text-xs text-[#1c88c6] font-semibold">MBBS, MS (Ophthalmology)</p>
-                <p className="text-[11px] text-slate-500 mt-1">
+              <div className="space-y-1">
+                <h3 className="font-bold text-lg text-slate-900">ডাঃ অনুরাগ মজুমদার</h3>
+                <p className="text-xs sm:text-sm text-[#1c88c6] font-semibold">MBBS, MS (Ophthalmology)</p>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-[1.6]">
                   মেডিকেল ডিরেক্টর ও সিনিয়র কনসালট্যান্ট (ফ্যাকো ও অ্যান্টেরিওর সেগমেন্ট সার্জারি)
                 </p>
               </div>
             </div>
 
             {/* Doctor 2 */}
-            <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm text-center space-y-3">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-center space-y-3.5">
               <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
                   src="/images/Dr-Subrata.jpg"
@@ -822,17 +1026,17 @@ export default function BangladeshEyeCarePage() {
                   className="object-cover"
                 />
               </div>
-              <div>
-                <h3 className="font-bold text-base text-slate-900">ডাঃ সুব্রত সাহা</h3>
-                <p className="text-xs text-[#1c88c6] font-semibold">MBBS, MS (Ophthalmology)</p>
-                <p className="text-[11px] text-slate-500 mt-1">
+              <div className="space-y-1">
+                <h3 className="font-bold text-lg text-slate-900">ডাঃ সুব্রত সাহা</h3>
+                <p className="text-xs sm:text-sm text-[#1c88c6] font-semibold">MBBS, MS (Ophthalmology)</p>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-[1.6]">
                   চিফ অপারেটিং অফিসার ও সিনিয়র আই সার্জন (ফ্যাকো ও রিফ্র্যাক্টিভ সার্জারি)
                 </p>
               </div>
             </div>
 
             {/* Doctor 3 */}
-            <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm text-center space-y-3">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-center space-y-3.5">
               <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
                   src="/images/Dr-Kaushick-1.jpg"
@@ -841,17 +1045,17 @@ export default function BangladeshEyeCarePage() {
                   className="object-cover"
                 />
               </div>
-              <div>
-                <h3 className="font-bold text-base text-slate-900">ডাঃ কৌশিক বিশ্বাস</h3>
-                <p className="text-xs text-[#1c88c6] font-semibold">MBBS, MS, DNB</p>
-                <p className="text-[11px] text-slate-500 mt-1">
+              <div className="space-y-1">
+                <h3 className="font-bold text-lg text-slate-900">ডাঃ কৌশিক বিশ্বাস</h3>
+                <p className="text-xs sm:text-sm text-[#1c88c6] font-semibold">MBBS, MS, DNB</p>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-[1.6]">
                   সিনিয়র ভিট্রেও-রেটিনা সার্জন ও রেটিনোপ্যাথি বিশেষজ্ঞ (শঙ্কর নেত্রালয় ফেলো)
                 </p>
               </div>
             </div>
 
             {/* Doctor 4 */}
-            <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm text-center space-y-3">
+            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm text-center space-y-3.5">
               <div className="relative w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
                   src="/images/Dr-paruldeep.jpg"
@@ -860,10 +1064,10 @@ export default function BangladeshEyeCarePage() {
                   className="object-cover"
                 />
               </div>
-              <div>
-                <h3 className="font-bold text-base text-slate-900">ডাঃ পারুলদীপ চাকমা</h3>
-                <p className="text-xs text-[#1c88c6] font-semibold">MBBS, MS, FAEH</p>
-                <p className="text-[11px] text-slate-500 mt-1">
+              <div className="space-y-1">
+                <h3 className="font-bold text-lg text-slate-900">ডাঃ পারুলদীপ চাকমা</h3>
+                <p className="text-xs sm:text-sm text-[#1c88c6] font-semibold">MBBS, MS, FAEH</p>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-[1.6]">
                   গ্লুকোমা ও ক্যাটারাক্ট স্পেশালিস্ট (অরবিন্দ আই কেয়ার ফেলো)
                 </p>
               </div>
@@ -882,16 +1086,16 @@ export default function BangladeshEyeCarePage() {
               ))}
             </div>
 
-            <blockquote className="text-base sm:text-lg text-slate-700 italic leading-relaxed">
+            <blockquote className="text-base sm:text-lg text-slate-700 leading-[1.85] font-normal">
               &ldquo;আমার বাবার রেটিনা হঠাৎ ছিঁড়ে যাওয়ার পর আমরা ভীষণ দুশ্চিন্তায় পড়েছিলাম। কলকাতায় যাওয়ার প্রস্তুতি নিতেই অনেক দিন লেগে যেত। পরে একজন আত্মীয়ের মাধ্যমে আগরতলা অশ্বিনী নেত্রালয়ের কথা জানতে পেরে কুমিল্লা থেকে মাত্র ২ ঘণ্টায় চলে আসি। ডাঃ কৌশিক বিশ্বাস পরের দিনই সফলভাবে রেটিনা সার্জারি করেন। ভাষা, আদর-যত্ন এবং চিকিৎসা খরচ—সবদিক থেকে এটি আমাদের সেরা অভিজ্ঞতা ছিল।&rdquo;
             </blockquote>
 
-            <div className="pt-2 border-t border-sky-100 flex items-center justify-between flex-wrap gap-2 text-xs sm:text-sm">
+            <div className="pt-3 border-t border-sky-100 flex items-center justify-between flex-wrap gap-2 text-sm">
               <div>
-                <p className="font-bold text-slate-900">আনোয়ারুল ইসলাম (রোগীর পুত্র)</p>
-                <p className="text-slate-500">কুমিল্লা, বাংলাদেশ</p>
+                <p className="font-bold text-slate-900 text-base">আনোয়ারুল ইসলাম (রোগীর পুত্র)</p>
+                <p className="text-slate-500 text-xs sm:text-sm">কুমিল্লা, বাংলাদেশ</p>
               </div>
-              <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs">
+              <span className="px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-xs sm:text-sm">
                 রেটিনা সার্জারি ও দৃষ্টি পুনরুদ্ধার
               </span>
             </div>
@@ -903,28 +1107,28 @@ export default function BangladeshEyeCarePage() {
       <section className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/80">
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
           <div className="text-center space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3 py-1 rounded-full">
+            <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1c88c6] bg-sky-100 px-3.5 py-1.5 rounded-full">
               সচরাচর জিজ্ঞাসিত প্রশ্ন
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-snug">
               বাংলাদেশী রোগীদের প্রচলিত প্রশ্নের উত্তর
             </h2>
           </div>
 
-          <div className="space-y-3.5">
+          <div className="space-y-4">
             {bangladeshFaqs.map((faq, idx) => (
               <details
                 key={idx}
                 className="group border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs"
               >
-                <summary className="flex items-center justify-between p-5 sm:p-6 font-bold text-sm sm:text-base text-slate-900 cursor-pointer list-none hover:bg-slate-50 transition-colors">
+                <summary className="flex items-center justify-between p-5 sm:p-6 font-bold text-base sm:text-lg text-slate-900 cursor-pointer list-none hover:bg-slate-50 transition-colors">
                   <span className="flex items-start gap-3 pr-4">
                     <HelpCircle className="w-5 h-5 text-[#1c88c6] shrink-0 mt-0.5" />
                     <span>{faq.question}</span>
                   </span>
                   <ChevronRight className="w-4 h-4 text-slate-400 group-open:rotate-90 transition-transform shrink-0" />
                 </summary>
-                <div className="px-6 pb-6 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pl-12">
+                <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-slate-600 leading-[1.85] border-t border-slate-100 pl-6 sm:pl-12">
                   {faq.answer}
                 </div>
               </details>
@@ -936,16 +1140,15 @@ export default function BangladeshEyeCarePage() {
       {/* Contact Banner */}
       <section className="py-16 sm:py-20 bg-gradient-to-r from-[#0a274c] via-[#103d72] to-[#177db8] text-white">
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-sky-200 text-xs font-semibold backdrop-blur-md">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>সরাসরি যোগাযোগ ও সহায়তা ডেস্ক</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-sky-200 text-xs sm:text-sm font-semibold backdrop-blur-md">
+            <span>সরাসরি আন্তর্জাতিক রোগী সহায়তা ডেস্ক</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-snug">
             চোখের যেকোনো সমস্যার জন্য আজই আমাদের সাথে যোগাযোগ করুন
           </h2>
 
-          <p className="text-xs sm:text-sm text-slate-200 max-w-xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-200 max-w-xl mx-auto leading-[1.8] font-normal">
             আপনার পুরনো প্রেসক্রিপশন বা চোখের রিপোর্ট হোয়াটসঅ্যাপে পাঠিয়ে বিনামূল্যে চিকিৎসকের প্রাথমিক পরামর্শ ও চিকিৎসা খরচের ধারণা নিন।
           </p>
 
@@ -954,7 +1157,7 @@ export default function BangladeshEyeCarePage() {
               href={whatsappPreFilledUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm rounded-full shadow-xl shadow-emerald-950/40 transition-all transform active:scale-95"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-sm sm:text-base rounded-full shadow-xl shadow-emerald-950/40 transition-all transform active:scale-95"
             >
               <MessageCircle className="w-4 h-4" />
               <span>হোয়াটসঅ্যাপে চ্যাট করুন: +91 92336 17885</span>
@@ -962,17 +1165,17 @@ export default function BangladeshEyeCarePage() {
 
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 font-bold text-xs sm:text-sm rounded-full transition-colors shadow-md"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-slate-900 hover:bg-slate-100 font-bold text-sm sm:text-base rounded-full transition-colors shadow-md"
             >
               <Phone className="w-4 h-4 text-[#1c88c6]" />
               <span>কল করুন: {siteConfig.phone}</span>
             </a>
           </div>
 
-          <div className="pt-6 border-t border-white/10 text-xs text-sky-200 space-y-1">
+          <div className="pt-6 border-t border-white/10 text-xs sm:text-sm text-sky-200 space-y-1">
             <p className="font-semibold text-white">📍 অশ্বিনী নেত্রালয় (Ashvini Netralaya)</p>
             <p>বিজয়কুমার চৌমুহনী, আগরতলা, ত্রিপুরা – ৭৯৯০০১ (আখাউড়া সীমান্ত থেকে মাত্র ১৫ মিনিট)</p>
-            <p className="text-slate-300 text-[11px] pt-1">ওপিডি সময়: সোম – শনি (সকাল ৯:০০ – সন্ধ্যা ৭:০০)</p>
+            <p className="text-slate-300 text-xs pt-1">ওপিডি সময়: সোম – শনি (সকাল ৯:০০ – সন্ধ্যা ৭:০০)</p>
           </div>
         </div>
       </section>

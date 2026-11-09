@@ -18,7 +18,6 @@ import {
   Microscope,
   FileText,
   Compass,
-  AlertCircle,
   Sparkles,
   Users,
   Navigation,
@@ -958,26 +957,6 @@ export default function BangladeshEyeCarePage() {
               </div>
               <div className="pt-2.5 border-t border-sky-100/80 text-xs font-bold text-[#0c6ba1]">বর্ডার থেকে দূরত্ব: ৬ কিমি (১৫ মিনিট)</div>
             </div>
-          </div>
-
-          {/* Visa Disclaimer Alert Box */}
-          <div className="p-5 sm:p-6 rounded-xl bg-amber-50 border border-amber-200/90 text-amber-950 space-y-2">
-            <div className="flex items-center gap-2 font-bold text-amber-900 text-sm sm:text-base font-bengali-heading">
-              <AlertCircle className="w-4 h-4 text-amber-600 shrink-0" />
-              <span>জরুরি ভিসা ও প্রশাসনিক তথ্য</span>
-            </div>
-            <p className="leading-relaxed text-xs sm:text-[13px] text-slate-700 font-normal">
-              ভারতীয় মেডিকেল ভিসা সংক্রান্ত নিয়মাবলী ও আবেদন প্রক্রিয়ার জন্য শুধুমাত্র ভারত সরকারের আনুষ্ঠানিক ভিসা পোর্টাল (Indian Visa Online:{" "}
-              <a
-                href="https://indianvisaonline.gov.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#0c6ba1] underline font-semibold"
-              >
-                indianvisaonline.gov.in
-              </a>
-              ) অনুসরণ করুন। ভিসা মঞ্জুর বা প্রত্যাখ্যানের সম্পূর্ণ সিদ্ধান্ত ভারতীয় দূতাবাস ও ভিসা কর্তৃপক্ষের এখতিয়ারধীন। হাসপাতাল কোনো অনানুষ্ঠানিক চার্জ দাবি করে না।
-            </p>
           </div>
         </div>
       </section>

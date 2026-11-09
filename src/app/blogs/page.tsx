@@ -16,19 +16,9 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
-const categories = [
-  "All Articles (0)",
-  "Cataract & Lens Guide",
-  "Diabetic Retina Care",
-  "Paediatric Eye Health",
-  "Glaucoma Prevention",
-  "Digital Screen Wellness",
-];
-
 export default function BlogsPage() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
-  const [activeCategory, setActiveCategory] = useState("All Articles (0)");
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,12 +33,6 @@ export default function BlogsPage() {
       {/* 1. Hero Header */}
       <section className="relative pt-12 pb-16 lg:pt-16 lg:pb-20 bg-gradient-to-b from-sky-50/70 via-white to-white overflow-hidden border-b border-slate-100">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="inline-flex items-center justify-center gap-3 text-slate-500 font-serif tracking-widest text-sm uppercase mb-3">
-            <span className="w-10 h-[1px] bg-slate-300"></span>
-            <span>Eye Health Knowledge Hub</span>
-            <span className="w-10 h-[1px] bg-slate-300"></span>
-          </div>
-
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#222222] tracking-tight mb-4">
             Educational Articles & Insights
           </h1>
@@ -70,28 +54,7 @@ export default function BlogsPage() {
         </div>
       </section>
 
-      {/* 2. Category Filter Pills */}
-      <section className="py-6 border-b border-slate-100 bg-slate-50/50">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className={`px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition-all ${
-                  activeCategory === cat
-                    ? "bg-[#1c88c6] text-white shadow-sm"
-                    : "bg-white text-slate-600 hover:bg-slate-100 border border-slate-200"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. High-End $10,000 Empty State */}
+      {/* 2. Empty State */}
       <section className="py-16 sm:py-24 bg-white flex-1 flex items-center justify-center">
         <div className="max-w-2xl mx-auto px-4 text-center space-y-8">
           {/* Graphic Icon */}

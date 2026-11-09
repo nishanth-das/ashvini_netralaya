@@ -45,13 +45,6 @@ export default function ServicesPage() {
       {/* Hero Header */}
       <section className="relative pt-12 pb-16 lg:pt-16 lg:pb-20 bg-gradient-to-b from-sky-50/70 via-white to-white overflow-hidden border-b border-slate-100">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Subtle "Welcome To" with accent lines */}
-          <div className="inline-flex items-center justify-center gap-3 text-slate-500 font-serif tracking-widest text-sm uppercase mb-3">
-            <span className="w-10 h-[1px] bg-slate-300"></span>
-            <span>Welcome To</span>
-            <span className="w-10 h-[1px] bg-slate-300"></span>
-          </div>
-
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#222222] tracking-tight mb-4">
             Our Services
           </h1>

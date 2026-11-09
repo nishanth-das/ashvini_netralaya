@@ -88,12 +88,37 @@
 
 /* Bengali Typography Optimization */
 .font-bengali {
-  font-family: 'Hind Siliguri', 'Noto Sans Bengali', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  letter-spacing: 0.012em;
+  font-family: 'Noto Sans Bengali', 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: normal !important;
+  word-spacing: 0.04em;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-bengali-heading {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Kalpurush', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  letter-spacing: normal !important;
+  word-spacing: 0.02em;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .font-bengali p,
 .font-bengali span,
-.font-bengali li {
-  text-rendering: optimizeLegibility;
+.font-bengali li,
+.font-bengali a,
+.font-bengali h1,
+.font-bengali h2,
+.font-bengali h3,
+.font-bengali h4,
+.font-bengali details,
+.font-bengali summary {
+  letter-spacing: normal !important;
+}
+
+.font-bengali p {
+  line-height: 1.85;
 }

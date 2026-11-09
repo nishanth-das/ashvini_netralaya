@@ -21,7 +21,8 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", "system-ui", "-apple-system", "sans-serif"],
         heading: ["Alegreya", "Georgia", "serif"],
-        bengali: ["'Hind Siliguri'", "'Noto Sans Bengali'", "'Poppins'", "system-ui", "sans-serif"],
+        bengali: ["'Noto Sans Bengali'", "'Hind Siliguri'", "'Kalpurush'", "'SolaimanLipi'", "system-ui", "sans-serif"],
+        "bengali-heading": ["'Hind Siliguri'", "'Noto Sans Bengali'", "'Kalpurush'", "sans-serif"],
       },
     },
   },

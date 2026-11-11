@@ -19,9 +19,9 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Page Header Banner */}
-      <section className="bg-gradient-to-r from-[#1c88c6] to-[#0284c7] py-14 sm:py-20 text-white text-center">
+      <section className="bg-gradient-to-r from-[#1c88c6] to-[#0284c7] py-10 sm:py-20 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-3">
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans">
+          <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight font-sans">
             About Ashvini Netralaya
           </h1>
           <p className="text-sm sm:text-base text-sky-100 max-w-2xl mx-auto">
@@ -31,9 +31,9 @@ export default function AboutPage() {
       </section>
 
       {/* Main Welcome & Story Section */}
-      <section className="py-16 sm:py-24">
+      <section className="py-12 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
             {/* Left Collage Image */}
             <div className="lg:col-span-6 relative">
               <div className="relative w-full aspect-square max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
@@ -48,15 +48,15 @@ export default function AboutPage() {
               </div>
 
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -right-2 sm:right-6 bg-white p-4 rounded-2xl shadow-xl border border-sky-100 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-[#1c88c6] text-white flex items-center justify-center font-bold">
-                  <ShieldCheck className="w-6 h-6" />
+              <div className="absolute -bottom-4 right-2 sm:-bottom-6 sm:right-6 bg-white p-3 sm:p-4 rounded-2xl shadow-xl border border-sky-100 flex items-center gap-2.5 sm:gap-3">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#1c88c6] text-white flex items-center justify-center font-bold shrink-0">
+                  <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div>
-                  <p className="font-extrabold text-sm text-slate-900 leading-tight">
+                  <p className="font-extrabold text-xs sm:text-sm text-slate-900 leading-tight">
                     NABH Accredited
                   </p>
-                  <p className="text-xs text-[#1c88c6] font-semibold">
+                  <p className="text-[11px] sm:text-xs text-[#1c88c6] font-semibold">
                     First & Only in Tripura
                   </p>
                 </div>
@@ -69,7 +69,7 @@ export default function AboutPage() {
                 <span className="text-xs font-extrabold text-[#1c88c6] uppercase tracking-widest">
                   WELCOME TO
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
+                <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
                   Ashvini Netralaya
                 </h2>
               </div>
@@ -87,17 +87,17 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="pt-2 flex flex-wrap gap-4">
+              <div className="pt-2 flex flex-wrap gap-3 sm:gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-[#1c88c6] hover:bg-[#1677be] text-white text-sm font-bold rounded-full shadow-md transition-all"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 bg-[#1c88c6] hover:bg-[#1677be] text-white text-sm font-bold rounded-full shadow-md transition-all"
                 >
                   <span>Visit Our Hospital</span>
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold rounded-full border border-slate-200 transition-all"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold rounded-full border border-slate-200 transition-all"
                 >
                   <span>Call: {siteConfig.phone}</span>
                 </a>
@@ -108,13 +108,13 @@ export default function AboutPage() {
       </section>
 
       {/* Hospital Leadership */}
-      <section className="py-16 sm:py-24 bg-slate-50 border-t border-slate-200/60">
+      <section className="py-12 sm:py-20 lg:py-24 bg-slate-50 border-t border-slate-200/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-14 space-y-2">
+          <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14 space-y-2">
             <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-widest">
               Executive Leadership
             </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
               Hospital Leadership
             </h2>
             <p className="text-sm text-slate-600">

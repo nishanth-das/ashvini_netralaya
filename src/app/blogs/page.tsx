@@ -46,7 +46,7 @@ export default function BlogsPage() {
             <input
               type="text"
               placeholder="Search eye conditions, symptoms, or surgeries..."
-              className="w-full pl-11 pr-4 py-3 rounded-full border border-slate-200 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#1c88c6]/30 shadow-sm"
+              className="w-full pl-11 pr-4 py-3 rounded-full border border-slate-200 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#1c88c6]/30 shadow-sm"
               disabled
             />
             <Search className="w-4 h-4 text-slate-400 absolute left-4 top-1/2 -translate-y-1/2" />
@@ -55,7 +55,7 @@ export default function BlogsPage() {
       </section>
 
       {/* 2. Empty State */}
-      <section className="py-16 sm:py-24 bg-white flex-1 flex items-center justify-center">
+      <section className="py-12 sm:py-24 bg-white flex-1 flex items-center justify-center">
         <div className="max-w-2xl mx-auto px-4 text-center space-y-8">
           {/* Graphic Icon */}
           <div className="relative mx-auto w-24 h-24 rounded-3xl bg-sky-50 border border-sky-100 flex items-center justify-center shadow-inner">
@@ -108,18 +108,18 @@ export default function BlogsPage() {
                 ✓ Thank you! You will receive our latest health articles and free camp alerts.
               </div>
             ) : (
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
+              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2.5 sm:gap-2">
                 <input
                   type="email"
                   required
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 px-4 py-2.5 rounded-full border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#1c88c6]/30 bg-white"
+                  className="flex-1 px-4 py-2.5 rounded-full border border-slate-300 text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#1c88c6]/30 bg-white"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-2.5 rounded-full bg-[#1c88c6] hover:bg-[#1578b0] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm whitespace-nowrap"
+                  className="w-full sm:w-auto px-6 py-2.5 rounded-full bg-[#1c88c6] hover:bg-[#1578b0] text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm whitespace-nowrap"
                 >
                   Notify Me
                 </button>
@@ -154,13 +154,13 @@ export default function BlogsPage() {
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold rounded-full transition-colors shadow"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 sm:py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs font-bold rounded-full transition-colors shadow"
             >
               <span>Chat with Care Desk on WhatsApp</span>
             </a>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-full border border-white/20 transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 sm:py-2.5 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-full border border-white/20 transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
               <span>Call: {siteConfig.phone}</span>

@@ -840,7 +840,7 @@ export default function Home2Page() {
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-wrap gap-2">
                   <h3 className="text-xl sm:text-2xl font-bold text-white font-sans">
                     {currentInfra.title}
                   </h3>
@@ -882,10 +882,10 @@ export default function Home2Page() {
             </p>
 
             {/* Doctor Tab Switcher */}
-            <div className="inline-flex items-center p-1 bg-slate-100 rounded-full border border-slate-200 mt-2">
+            <div className="inline-flex flex-wrap sm:flex-nowrap justify-center items-center p-1 bg-slate-100 rounded-2xl sm:rounded-full border border-slate-200 mt-2 gap-1 max-w-full">
               <button
                 onClick={() => setActiveDoctorTab("inhouse")}
-                className={`px-6 py-2 rounded-full text-xs font-bold transition-all ${
+                className={`px-4 sm:px-6 py-2 rounded-full text-[11px] sm:text-xs font-bold transition-all whitespace-nowrap ${
                   activeDoctorTab === "inhouse"
                     ? "bg-[#1c88c6] text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900"
@@ -895,7 +895,7 @@ export default function Home2Page() {
               </button>
               <button
                 onClick={() => setActiveDoctorTab("visiting")}
-                className={`px-6 py-2 rounded-full text-xs font-bold transition-all ${
+                className={`px-4 sm:px-6 py-2 rounded-full text-[11px] sm:text-xs font-bold transition-all whitespace-nowrap ${
                   activeDoctorTab === "visiting"
                     ? "bg-[#1c88c6] text-white shadow-sm"
                     : "text-slate-600 hover:text-slate-900"

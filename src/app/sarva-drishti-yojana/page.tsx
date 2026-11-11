@@ -23,9 +23,9 @@ export default function SarvaDrishtiYojanaPage() {
   return (
     <div className="bg-white">
       {/* Banner */}
-      <section className="bg-gradient-to-r from-[#1c88c6] to-[#0284c7] py-14 sm:py-20 text-white text-center">
+      <section className="bg-gradient-to-r from-[#1c88c6] to-[#0284c7] py-10 sm:py-20 text-white text-center">
         <div className="max-w-4xl mx-auto px-4 space-y-3">
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans">
+          <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight font-sans">
             Sarva Drishti Yojana
           </h1>
           <p className="text-sm sm:text-base text-sky-100 max-w-2xl mx-auto">
@@ -35,12 +35,12 @@ export default function SarvaDrishtiYojanaPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section className="py-12 sm:py-20 lg:py-24">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           {/* Announcement Card */}
-          <div className="bg-sky-50/60 rounded-3xl p-6 sm:p-10 border border-sky-100 space-y-6">
-            <div className="flex flex-col md:flex-row items-center gap-6 pb-6 border-b border-sky-200/60">
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden shadow-md flex-shrink-0 bg-white p-2">
+          <div className="bg-sky-50/60 rounded-3xl p-5 sm:p-10 border border-sky-100 space-y-6">
+            <div className="flex flex-col md:flex-row items-center gap-5 sm:gap-6 pb-6 border-b border-sky-200/60">
+              <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden shadow-md flex-shrink-0 bg-white p-2">
                 <Image
                   src="/images/AN-1080-by-1080-SDY-logo.png"
                   alt="Sarva Drishti Yojana Logo"
@@ -49,7 +49,7 @@ export default function SarvaDrishtiYojanaPage() {
                 />
               </div>
               <div className="space-y-2 text-center md:text-left">
-                <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">
+                <h2 className="text-lg sm:text-2xl font-extrabold text-slate-900 leading-snug">
                   Ashvini Eye Foundation, in Collaboration with Ashvini Netralaya, Launches “Sarva Drishti Yojana” – Affordable Eye Care for the Underprivileged
                 </h2>
                 <p className="text-xs sm:text-sm text-[#1c88c6] font-semibold">
@@ -165,13 +165,13 @@ export default function SarvaDrishtiYojanaPage() {
           </div>
 
           {/* Government Health Cards Acceptance */}
-          <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-2xl p-5 sm:p-8 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-5 sm:gap-6">
             <div className="space-y-2 text-center sm:text-left">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider">
                 <ShieldCheck className="w-4 h-4" />
                 <span>Government Beneficiaries</span>
               </div>
-              <h4 className="text-xl sm:text-2xl font-bold">
+              <h4 className="text-lg sm:text-2xl font-bold">
                 PM-JAY &amp; CM-JAY Health Cards Covered
               </h4>
               <p className="text-xs sm:text-sm text-emerald-100 max-w-xl">
@@ -180,14 +180,14 @@ export default function SarvaDrishtiYojanaPage() {
             </div>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="px-6 py-3 bg-white text-emerald-800 font-bold text-xs sm:text-sm rounded-full shadow hover:bg-emerald-50 transition flex-shrink-0"
+              className="w-full sm:w-auto text-center px-6 py-3 bg-white text-emerald-800 font-bold text-xs sm:text-sm rounded-full shadow hover:bg-emerald-50 transition flex-shrink-0"
             >
               Verify Eligibility
             </a>
           </div>
 
           {/* Scheme Images Gallery */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
               <Image
                 src="/images/ion-fet-QRawWgV6gmo-unsplash-1-scaled.jpg"
@@ -207,8 +207,8 @@ export default function SarvaDrishtiYojanaPage() {
           </div>
 
           {/* Mission Quote */}
-          <div className="border-l-4 border-[#1c88c6] pl-6 py-2 space-y-3 bg-slate-50 p-6 rounded-r-2xl">
-            <p className="text-base sm:text-lg font-medium text-slate-800 italic leading-relaxed">
+          <div className="border-l-4 border-[#1c88c6] pl-4 sm:pl-6 py-3 sm:py-2 space-y-3 bg-slate-50 p-4 sm:p-6 rounded-r-2xl">
+            <p className="text-sm sm:text-lg font-medium text-slate-800 italic leading-relaxed">
               &ldquo;We believe that quality eye care should not be a privilege, but a basic right. With Sarva Drishti Yojana, our goal is to reach those who need it the most and ensure that no one is denied the gift of vision due to financial hardship.&rdquo;
             </p>
             <p className="text-xs sm:text-sm text-slate-600">
@@ -217,25 +217,25 @@ export default function SarvaDrishtiYojanaPage() {
           </div>
 
           {/* Action Box */}
-          <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 text-center space-y-4">
-            <h3 className="text-2xl sm:text-3xl font-extrabold font-sans">
+          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-10 text-center space-y-4">
+            <h3 className="text-xl sm:text-3xl font-extrabold font-sans">
               Avail Services Under Sarva Drishti Yojana
             </h3>
-            <p className="text-sm text-slate-300 max-w-xl mx-auto">
+            <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
               For further details, required documentation, or to avail of the services under the Sarva Drishti Yojana, individuals can visit Ashvini Netralaya at Bijoykumar Chowmuhani, Agartala.
             </p>
-            <div className="pt-2 flex flex-wrap justify-center gap-4">
+            <div className="pt-2 flex flex-wrap justify-center gap-3 sm:gap-4">
               <a
                 href={siteConfig.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm rounded-full shadow transition"
+                className="w-full sm:w-auto text-center px-6 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm rounded-full shadow transition"
               >
                 Inquire on WhatsApp
               </a>
               <Link
                 href="/contact"
-                className="px-6 py-3 bg-[#1c88c6] hover:bg-[#1677be] text-white font-bold text-xs sm:text-sm rounded-full shadow transition"
+                className="w-full sm:w-auto text-center px-6 py-3 bg-[#1c88c6] hover:bg-[#1677be] text-white font-bold text-xs sm:text-sm rounded-full shadow transition"
               >
                 Hospital Location &amp; Contact
               </Link>

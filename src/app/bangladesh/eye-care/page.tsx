@@ -267,17 +267,17 @@ export default function BangladeshEyeCarePage() {
                   href={whatsappPreFilledUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs sm:text-sm rounded-full shadow-md shadow-emerald-950/30 transition-all transform active:scale-95"
+                  className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs sm:text-sm rounded-full shadow-md shadow-emerald-950/30 transition-all transform active:scale-95"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4 shrink-0" />
                   <span>হোয়াটসঅ্যাপে রিপোর্ট পাঠান ও ভিসা সহায়তা নিন</span>
                 </a>
 
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
-                  className="inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-semibold text-xs sm:text-sm rounded-full backdrop-blur-md transition-colors"
+                  className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-semibold text-xs sm:text-sm rounded-full backdrop-blur-md transition-colors"
                 >
-                  <Phone className="w-3.5 h-3.5 text-sky-300" />
+                  <Phone className="w-3.5 h-3.5 text-sky-300 shrink-0" />
                   <span>সরাসরি কল: {siteConfig.phone}</span>
                 </a>
               </div>
@@ -632,7 +632,7 @@ export default function BangladeshEyeCarePage() {
           <div className="relative border-l-2 border-sky-200 ml-4 sm:ml-8 pl-6 sm:pl-9 space-y-8 max-w-2xl mx-auto">
             {/* Step 1 */}
             <div className="relative space-y-1.5">
-              <div className="absolute -left-[33px] sm:-left-[45px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
+              <div className="absolute -left-[39px] sm:-left-[51px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
                 ১
               </div>
               <span className="text-xs font-bold text-[#0c6ba1]">
@@ -648,7 +648,7 @@ export default function BangladeshEyeCarePage() {
 
             {/* Step 2 */}
             <div className="relative space-y-1.5">
-              <div className="absolute -left-[33px] sm:-left-[45px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
+              <div className="absolute -left-[39px] sm:-left-[51px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
                 ২
               </div>
               <span className="text-xs font-bold text-[#0c6ba1]">
@@ -664,7 +664,7 @@ export default function BangladeshEyeCarePage() {
 
             {/* Step 3 */}
             <div className="relative space-y-1.5">
-              <div className="absolute -left-[33px] sm:-left-[45px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
+              <div className="absolute -left-[39px] sm:-left-[51px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
                 ৩
               </div>
               <span className="text-xs font-bold text-[#0c6ba1]">
@@ -680,7 +680,7 @@ export default function BangladeshEyeCarePage() {
 
             {/* Step 4 */}
             <div className="relative space-y-1.5">
-              <div className="absolute -left-[33px] sm:-left-[45px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
+              <div className="absolute -left-[39px] sm:-left-[51px] top-0 w-7 h-7 rounded-full bg-[#1c88c6] text-white font-bold flex items-center justify-center text-xs shadow-xs">
                 ৪
               </div>
               <span className="text-xs font-bold text-[#0c6ba1]">
@@ -696,7 +696,7 @@ export default function BangladeshEyeCarePage() {
 
             {/* Step 5 */}
             <div className="relative space-y-1.5">
-              <div className="absolute -left-[33px] sm:-left-[45px] top-0 w-7 h-7 rounded-full bg-[#20c997] text-white font-bold flex items-center justify-center text-xs shadow-xs">
+              <div className="absolute -left-[39px] sm:-left-[51px] top-0 w-7 h-7 rounded-full bg-[#20c997] text-white font-bold flex items-center justify-center text-xs shadow-xs">
                 ৫
               </div>
               <span className="text-xs font-bold text-[#20c997]">
@@ -1108,7 +1108,7 @@ export default function BangladeshEyeCarePage() {
                   </span>
                   <ChevronRight className="w-4 h-4 text-slate-400 group-open:rotate-90 transition-transform shrink-0" />
                 </summary>
-                <div className="px-5 pb-5 pt-1 text-xs sm:text-[13.5px] text-slate-600 leading-relaxed border-t border-slate-100 pl-5 sm:pl-11 font-normal">
+                <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-2 text-xs sm:text-[13.5px] text-slate-600 leading-relaxed border-t border-slate-100 pl-4 sm:pl-11 font-normal">
                   {faq.answer}
                 </div>
               </details>
@@ -1137,17 +1137,17 @@ export default function BangladeshEyeCarePage() {
               href={whatsappPreFilledUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs sm:text-sm rounded-full shadow-lg shadow-emerald-950/30 transition-all transform active:scale-95"
+              className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs sm:text-sm rounded-full shadow-lg shadow-emerald-950/30 transition-all transform active:scale-95"
             >
-              <MessageCircle className="w-4 h-4" />
+              <MessageCircle className="w-4 h-4 shrink-0" />
               <span>হোয়াটসঅ্যাপে চ্যাট করুন: +91 92336 17885</span>
             </a>
 
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-xs sm:text-sm rounded-full transition-colors shadow-sm"
+              className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-xs sm:text-sm rounded-full transition-colors shadow-sm"
             >
-              <Phone className="w-4 h-4 text-[#1c88c6]" />
+              <Phone className="w-4 h-4 text-[#1c88c6] shrink-0" />
               <span>কল করুন: {siteConfig.phone}</span>
             </a>
           </div>

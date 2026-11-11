@@ -19,12 +19,12 @@ export function Footer() {
   return (
     <footer className="bg-[#051226] text-slate-300 border-t border-slate-800">
       {/* Footer Content */}
-      <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+      <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-8">
           {/* Column 1: Hospital Identity & Credentials (4 cols) */}
-          <div className="lg:col-span-4 space-y-5">
+          <div className="sm:col-span-2 lg:col-span-4 space-y-5">
             <Link href="/" className="inline-block">
-              <div className="relative w-52 h-14">
+              <div className="relative w-44 sm:w-52 h-12 sm:h-14">
                 <Image
                   src="/images/AN-Website-name-logo-e1773034551124-1024x206.png"
                   alt="Ashvini Netralaya Logo"
@@ -106,7 +106,7 @@ export function Footer() {
             <h3 className="text-sm font-bold uppercase tracking-wider text-white pb-2 border-b border-sky-500/40 inline-block font-sans">
               Clinical Specialities
             </h3>
-            <ul className="space-y-2 text-xs text-slate-300 max-h-80 overflow-y-auto pr-1">
+            <ul className="space-y-2 text-xs text-slate-300">
               {servicesData.slice(0, 10).map((svc) => (
                 <li key={svc.id}>
                   <Link

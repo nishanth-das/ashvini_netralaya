@@ -3,25 +3,25 @@ import { siteConfig } from "@/data/siteConfig";
 
 export function MapSection() {
   return (
-    <section className="py-16 sm:py-20 bg-white border-t border-slate-100">
+    <section className="py-12 sm:py-20 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10 space-y-2">
           <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-widest">
             Visit Our Clinic
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-sans">
             Located Right at the Heart of Agartala
           </h2>
-          <p className="text-sm text-slate-600">
+          <p className="text-xs sm:text-sm text-slate-600">
             Easy to reach from any corner of Agartala and all nearby districts of Tripura.
           </p>
         </div>
 
         {/* Map and Info Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
           {/* Info Card */}
-          <div className="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200/80 flex flex-col justify-between space-y-6">
+          <div className="bg-slate-50 rounded-2xl p-5 sm:p-8 border border-slate-200/80 flex flex-col justify-between space-y-6">
             <div className="space-y-5">
               <div className="flex items-start gap-3.5">
                 <div className="w-9 h-9 rounded-full bg-sky-100 flex items-center justify-center flex-shrink-0 text-[#1c88c6]">
@@ -84,12 +84,12 @@ export function MapSection() {
           </div>
 
           {/* Embedded Map */}
-          <div className="lg:col-span-2 rounded-2xl overflow-hidden border border-slate-200 shadow-sm min-h-[340px] relative">
+          <div className="lg:col-span-2 rounded-2xl overflow-hidden border border-slate-200 shadow-sm h-[260px] sm:h-[340px] lg:h-auto lg:min-h-[340px] relative">
             <iframe
               src={siteConfig.mapEmbedUrl}
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: "340px" }}
+              style={{ border: 0 }}
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

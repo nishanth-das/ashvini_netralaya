@@ -41,9 +41,9 @@ export function AppWrapper({ children }: { children: React.ReactNode }) {
 
   return (
     <BookingContext.Provider value={{ openBooking, closeBooking }}>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen overflow-x-clip">
         <Header onOpenBooking={() => openBooking()} />
-        <main className="flex-1 pb-16 md:pb-0">{children}</main>
+        <main className="flex-1 pb-[76px] md:pb-0">{children}</main>
         <Footer />
         <WhatsAppPill />
         <MobileQuickBar onOpenBooking={() => openBooking()} />

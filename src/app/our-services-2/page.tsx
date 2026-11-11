@@ -55,28 +55,28 @@ export default function ServicesPage() {
           </p>
 
           {/* Trust Highlights Badges */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-[13px] font-semibold text-slate-700">
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200/80">
-              <ShieldCheck className="w-4 h-4 text-[#1c88c6]" />
+          <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:gap-5 text-[11px] sm:text-[13px] font-semibold text-slate-700">
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm border border-slate-200/80">
+              <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#1c88c6] shrink-0" />
               <span>NABH Accredited Safety</span>
             </div>
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200/80">
-              <Award className="w-4 h-4 text-[#20c997]" />
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm border border-slate-200/80">
+              <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#20c997] shrink-0" />
               <span>10,000+ Surgeries</span>
             </div>
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200/80">
-              <Sparkles className="w-4 h-4 text-amber-500" />
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm border border-slate-200/80">
+              <Sparkles className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-500 shrink-0" />
               <span>Modular Laminar Flow OT</span>
             </div>
-            <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-slate-200/80">
-              <Activity className="w-4 h-4 text-rose-500" />
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-sm border border-slate-200/80">
+              <Activity className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-rose-500 shrink-0" />
               <span>Cashless & Ayushman Bharat</span>
             </div>
           </div>
 
           {/* Interactive Symptom Quick Navigator */}
-          <div className="mt-12 pt-8 border-t border-slate-200/70 max-w-4xl mx-auto">
-            <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
+          <div className="mt-9 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200/70 max-w-4xl mx-auto">
+            <p className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">
               Find By Symptoms — What Are You Experiencing?
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2">
@@ -93,7 +93,7 @@ export default function ServicesPage() {
                 <Link
                   key={i}
                   href={sym.href}
-                  className="px-3.5 py-1.5 rounded-full bg-white hover:bg-[#1c88c6] text-slate-700 hover:text-white border border-slate-200 hover:border-[#1c88c6] text-xs font-medium transition-all shadow-sm active:scale-95"
+                  className="px-3 sm:px-3.5 py-1.5 rounded-full bg-white hover:bg-[#1c88c6] text-slate-700 hover:text-white border border-slate-200 hover:border-[#1c88c6] text-[11px] sm:text-xs font-medium transition-all shadow-sm active:scale-95"
                 >
                   {sym.label} →
                 </Link>
@@ -104,8 +104,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Featured Clinical Programs */}
-      <section className="py-16 sm:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-20 lg:space-y-28">
+      <section className="py-12 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 space-y-14 sm:space-y-20 lg:space-y-28">
           <div className="text-center max-w-xl mx-auto">
             <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-widest block mb-1">
               Core Specialities
@@ -124,7 +124,7 @@ export default function ServicesPage() {
             return (
               <div
                 key={service.id}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-7 sm:gap-10 lg:gap-14 items-center"
               >
                 {/* Photo Column */}
                 <div
@@ -141,13 +141,13 @@ export default function ServicesPage() {
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
-                    <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs">
-                      <span className="bg-[#1c88c6]/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium">
+                    <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 flex flex-wrap items-center justify-between gap-1.5 text-white text-[11px] sm:text-xs">
+                      <span className="bg-[#1c88c6]/90 backdrop-blur-sm px-2.5 sm:px-3 py-1 rounded-full font-medium">
                         {service.category}
                       </span>
                       {service.procedureTime && (
-                        <span className="bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1.5">
-                          <Clock className="w-3.5 h-3.5" />
+                        <span className="bg-black/60 backdrop-blur-sm px-2.5 sm:px-3 py-1 rounded-full flex items-center gap-1.5">
+                          <Clock className="w-3.5 h-3.5 shrink-0" />
                           <span>{service.procedureTime}</span>
                         </span>
                       )}
@@ -446,14 +446,14 @@ export default function ServicesPage() {
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#1c88c6] hover:bg-[#1578b0] text-white font-medium text-sm rounded-full shadow-lg transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-8 py-3.5 bg-[#1c88c6] hover:bg-[#1578b0] text-white font-medium text-sm rounded-full shadow-lg transition-colors"
             >
               <Calendar className="w-4 h-4" />
               <span>Book Appointment via WhatsApp</span>
             </a>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/20 hover:bg-white/30 text-white border border-white/40 font-medium text-sm rounded-full transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3.5 bg-white/20 hover:bg-white/30 text-white border border-white/40 font-medium text-sm rounded-full transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>Call: {siteConfig.phone}</span>

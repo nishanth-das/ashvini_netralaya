@@ -4,25 +4,25 @@ import { siteConfig } from "@/data/siteConfig";
 
 export function ReviewsSection() {
   return (
-    <section className="py-16 sm:py-24 bg-gradient-to-b from-slate-50 via-sky-50/30 to-white border-t border-slate-200/70">
+    <section className="py-12 sm:py-20 bg-gradient-to-b from-slate-50 via-sky-50/30 to-white border-t border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-sky-100 text-[#1c88c6] text-xs font-bold uppercase tracking-wider">
             <CheckCircle2 className="w-3.5 h-3.5" />
             <span>Verified Patient Outcomes</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-sans">
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-sans">
             Stories of Restored Vision &amp; Hope
           </h2>
 
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Read what patients and their families across Tripura say about their experience at Ashvini Netralaya.
           </p>
 
           {/* Google Rating Pillar */}
-          <div className="inline-flex items-center gap-3 bg-white px-5 py-2.5 rounded-2xl shadow-sm border border-slate-200/80 mt-2">
+          <div className="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-3 bg-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl shadow-sm border border-slate-200/80 mt-2">
             <div className="flex text-amber-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-4 h-4 fill-current" />
@@ -36,11 +36,11 @@ export function ReviewsSection() {
         </div>
 
         {/* Reviews Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {reviewsData.slice(0, 3).map((review) => (
             <div
               key={review.id}
-              className="bg-white rounded-2xl p-7 shadow-sm hover:shadow-xl border border-slate-200/80 flex flex-col justify-between space-y-5 transition-all duration-300 hover:-translate-y-1 relative"
+              className="bg-white rounded-2xl p-5 sm:p-7 shadow-sm hover:shadow-xl border border-slate-200/80 flex flex-col justify-between space-y-5 transition-all duration-300 hover:-translate-y-1 relative"
             >
               {/* Subtle quote accent mark */}
               <div className="absolute top-5 right-5 text-sky-100">

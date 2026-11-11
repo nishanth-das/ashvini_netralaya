@@ -1,7 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { AppWrapper } from "@/components/AppWrapper";
 import { siteConfig } from "@/data/siteConfig";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: "#1c88c6",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),

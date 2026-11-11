@@ -8,7 +8,7 @@ export function WhatsAppPill() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="hidden md:flex fixed bottom-6 right-6 z-50 flex-col items-end">
       {/* Expanded quick options */}
       {isOpen && (
         <div className="mb-3 flex flex-col items-end gap-2.5 animate-fadeIn">

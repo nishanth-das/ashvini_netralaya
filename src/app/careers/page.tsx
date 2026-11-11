@@ -166,10 +166,10 @@ export default function CareersPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-[#0a274c] via-[#0d3b70] to-[#1c88c6] text-white py-14 sm:py-20 text-center relative overflow-hidden">
+      <section className="bg-gradient-to-r from-[#0a274c] via-[#0d3b70] to-[#1c88c6] text-white py-10 sm:py-20 text-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1),transparent_60%)] pointer-events-none" />
         <div className="max-w-4xl mx-auto px-4 space-y-4 relative z-10">
-          <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight font-sans">
+          <h1 className="text-2xl sm:text-5xl font-extrabold tracking-tight font-sans">
             Build Your Healthcare Career at Ashvini Netralaya
           </h1>
 
@@ -180,8 +180,8 @@ export default function CareersPage() {
       </section>
 
       {/* Culture & Highlights */}
-      <section className="py-14 sm:py-16 bg-slate-50 border-b border-slate-200/80">
-        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      <section className="py-10 sm:py-16 bg-slate-50 border-b border-slate-200/80">
+        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider">
               Workplace Culture &amp; Growth
@@ -191,7 +191,7 @@ export default function CareersPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
             <div className="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm space-y-3">
               <div className="w-12 h-12 rounded-xl bg-sky-50 text-[#1c88c6] flex items-center justify-center font-bold">
                 <ShieldCheck className="w-6 h-6" />
@@ -232,9 +232,9 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions & Form */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
             {/* Left Column: Job Openings List (7 cols) */}
             <div className="lg:col-span-7 space-y-6">
               <div className="space-y-1">
@@ -274,15 +274,15 @@ export default function CareersPage() {
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-700 pt-1">
-                      <div className="flex items-center gap-1.5">
-                        <GraduationCap className="w-3.5 h-3.5 text-sky-600 shrink-0" />
-                        <span className="truncate"><strong>Req:</strong> {job.qualifications}</span>
+                      <div className="flex items-start gap-1.5 min-w-0">
+                        <GraduationCap className="w-3.5 h-3.5 text-sky-600 shrink-0 mt-0.5" />
+                        <span className="leading-snug"><strong>Req:</strong> {job.qualifications}</span>
                       </div>
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-1.5 min-w-0">
                         <Clock className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                         <span><strong>Exp:</strong> {job.experience}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 sm:col-span-2">
+                      <div className="flex items-center gap-1.5 sm:col-span-2 min-w-0">
                         <MapPin className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                         <span><strong>Location:</strong> {job.location}</span>
                       </div>
@@ -297,7 +297,7 @@ export default function CareersPage() {
                             position: job.title,
                           }))
                         }
-                        className="inline-flex items-center gap-1 text-xs font-bold text-[#1c88c6] hover:text-[#1578b0] hover:underline"
+                        className="inline-flex items-center gap-1 text-xs font-bold text-[#1c88c6] hover:text-[#1578b0] hover:underline py-1"
                       >
                         <span>Apply for this position</span>
                         <ArrowRight className="w-3.5 h-3.5" />
@@ -310,7 +310,7 @@ export default function CareersPage() {
 
             {/* Right Column: Application Form (5 cols) */}
             <div id="apply-form" className="lg:col-span-5 scroll-mt-24">
-              <div className="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-lg space-y-6">
+              <div className="bg-slate-50 rounded-2xl p-5 sm:p-8 border border-slate-200/90 shadow-lg space-y-6">
                 <div className="space-y-1">
                   <span className="text-[11px] font-bold text-[#1c88c6] uppercase tracking-wider">
                     Quick Application
@@ -354,7 +354,7 @@ export default function CareersPage() {
                           setFormData({ ...formData, fullName: e.target.value })
                         }
                         placeholder="Dr. / Mr. / Ms. Your Name"
-                        className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                        className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                       />
                     </div>
 
@@ -372,7 +372,7 @@ export default function CareersPage() {
                             setFormData({ ...formData, phone: e.target.value })
                           }
                           placeholder="+91 98765 43210"
-                          className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                          className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                         />
                       </div>
                       <div>
@@ -387,7 +387,7 @@ export default function CareersPage() {
                             setFormData({ ...formData, email: e.target.value })
                           }
                           placeholder="your.email@example.com"
-                          className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                          className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                         />
                       </div>
                     </div>
@@ -402,7 +402,7 @@ export default function CareersPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, position: e.target.value })
                         }
-                        className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                        className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                       >
                         {jobOpenings.map((job) => (
                           <option key={job.id} value={job.title}>
@@ -429,7 +429,7 @@ export default function CareersPage() {
                               experience: e.target.value,
                             })
                           }
-                          className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                          className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                         >
                           <option value="Fresher / < 1 Year">Fresher / &lt; 1 Year</option>
                           <option value="1 - 3 Years">1 - 3 Years</option>
@@ -448,7 +448,7 @@ export default function CareersPage() {
                             setFormData({ ...formData, city: e.target.value })
                           }
                           placeholder="Agartala / Tripura / Other"
-                          className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                          className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                         />
                       </div>
                     </div>
@@ -469,7 +469,7 @@ export default function CareersPage() {
                           })
                         }
                         placeholder="e.g. MS (Ophthal) / B.Optom / GNM / B.Sc"
-                        className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                        className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                       />
                     </div>
 
@@ -488,7 +488,7 @@ export default function CareersPage() {
                           })
                         }
                         placeholder="https://drive.google.com/... or LinkedIn profile"
-                        className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
+                        className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white"
                       />
                       <p className="text-[10px] text-slate-400 mt-0.5">
                         You can also share your PDF resume directly on WhatsApp or Email.
@@ -510,7 +510,7 @@ export default function CareersPage() {
                           })
                         }
                         placeholder="Briefly describe your clinical experience, current notice period, and career goals..."
-                        className="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white resize-none"
+                        className="w-full text-base sm:text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#1c88c6] bg-white resize-none"
                       />
                     </div>
 
@@ -556,10 +556,10 @@ export default function CareersPage() {
           <p className="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto">
             Contact our Human Resources and Medical Directorate team directly:
           </p>
-          <div className="flex items-center justify-center gap-4 flex-wrap pt-2">
+          <div className="flex items-center justify-center gap-3 flex-wrap pt-2">
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 sm:py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-sky-400" />
               <span>Call HR Desk: {siteConfig.phone}</span>
@@ -568,7 +568,7 @@ export default function CareersPage() {
               href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs transition-colors shadow-md"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 sm:py-2.5 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs transition-colors shadow-md"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp Careers Helpline</span>

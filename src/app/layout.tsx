@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: `${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.png`,
+        url: `${siteConfig.url}/images/Hero_Banner01.webp`,
         width: 1200,
-        height: 630,
+        height: 650,
         alt: "Ashvini Netralaya - Superspeciality Eye Hospital Agartala",
       },
     ],
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.metaTitle,
     description: siteConfig.metaDescription,
-    images: [`${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.png`],
+    images: [`${siteConfig.url}/images/Hero_Banner01.webp`],
   },
   robots: {
     index: true,
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/ASHVINI_EYE_CARE-removebg-preview-1-e1665819489873.png",
-    apple: "/images/ASHVINI_EYE_CARE-removebg-preview-1-e1665819489873.png",
+    icon: "/images/ASHVINI_EYE_CARE-removebg-preview-1-e1665819489873.webp",
+    apple: "/images/ASHVINI_EYE_CARE-removebg-preview-1-e1665819489873.webp",
   },
 };
 
@@ -77,10 +77,10 @@ const jsonLd = {
   name: siteConfig.name,
   legalName: siteConfig.companyName,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.png`,
-  image: `${siteConfig.url}/images/Home-Banner-1.jpg`,
+  logo: `${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.webp`,
+  image: `${siteConfig.url}/images/Hero_Banner01.webp`,
   description: siteConfig.metaDescription,
-  telephone: siteConfig.phone,
+  telephone: [siteConfig.phone, siteConfig.altPhone],
   email: siteConfig.email,
   priceRange: "₹₹",
   address: {
@@ -99,15 +99,9 @@ const jsonLd = {
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "19:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Thursday", "Sunday"],
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday", "Sunday"],
       opens: "10:00",
-      closes: "14:00",
+      closes: "17:00",
     },
   ],
   medicalSpecialty: [

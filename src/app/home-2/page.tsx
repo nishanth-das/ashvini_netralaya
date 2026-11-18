@@ -60,7 +60,7 @@ const clinicalSuites = [
     recovery: "24-48 Hours",
     inCharge: "Dr. Anurag Majumdar",
     slug: "cataract-surgery-phaco",
-    image: "/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.jpeg",
+    image: "/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.webp",
   },
   {
     id: "retina",
@@ -79,7 +79,7 @@ const clinicalSuites = [
     recovery: "3-7 Days",
     inCharge: "Dr. Kaushick Biswas / Dr. Surendra Prakash",
     slug: "retina-surgeries",
-    image: "/images/WhatsApp-Image-2023-06-03-at-2.13.30-AM.jpeg",
+    image: "/images/WhatsApp-Image-2023-06-03-at-2.13.30-AM.webp",
   },
   {
     id: "paediatric",
@@ -98,7 +98,7 @@ const clinicalSuites = [
     recovery: "Immediate - 48h",
     inCharge: "Dr. Paichainda Mog",
     slug: "paediatric-eye-care",
-    image: "/images/little-girl-checking-up-her-sight-ophthalmology-center-1-1-scaled.jpg",
+    image: "/images/little-girl-checking-up-her-sight-ophthalmology-center-1-1-scaled.webp",
   },
   {
     id: "glaucoma",
@@ -117,7 +117,7 @@ const clinicalSuites = [
     recovery: "24-72 Hours",
     inCharge: "Dr. Paruldeep Chakma",
     slug: "glaucoma-surgeries",
-    image: "/images/WhatsApp-Image-2023-06-03-at-2.30.23-AM-1.jpeg",
+    image: "/images/WhatsApp-Image-2023-06-03-at-2.30.23-AM-1.webp",
   },
   {
     id: "cornea",
@@ -136,7 +136,7 @@ const clinicalSuites = [
     recovery: "48 Hours",
     inCharge: "Dr. John Sarkar",
     slug: "corneal-topography",
-    image: "/images/female-doctor-working-her-ophthalmology-clinic-1-1-scaled.jpg",
+    image: "/images/female-doctor-working-her-ophthalmology-clinic-1-1-scaled.webp",
   },
   {
     id: "oculoplasty",
@@ -155,7 +155,7 @@ const clinicalSuites = [
     recovery: "3-5 Days",
     inCharge: "Dr. Isha Agarwalla",
     slug: "our-services-2",
-    image: "/images/New-Project-1.png",
+    image: "/images/New-Project-1.webp",
   },
 ];
 
@@ -170,7 +170,7 @@ const infrastructureList = [
       "Surgical suites engineered with continuous ceiling-to-floor HEPA filtered air circulation, positive atmospheric pressure cascades, and anti-static seamless flooring to guarantee absolute surgical sterility.",
     statLabel: "Infection Rate",
     statValue: "0.00%",
-    image: "/images/Why-us.jpg",
+    image: "/images/Why-us.webp",
     specs: ["Class 10,000 HEPA Air Delivery", "Positive Atmospheric Pressure Cascade", "Continuous Sterile Laminar Air Flow", "Hermetically Sealed Touchless Doors"],
   },
   {
@@ -182,7 +182,7 @@ const infrastructureList = [
       "The pinnacle of active fluidics technology in cataract surgery. Dynamically responds to surgical vacuum fluctuations, maintaining physiological intraocular pressure and protecting delicate corneal endothelial cells.",
     statLabel: "Incision Size",
     statValue: "1.8 mm - 2.2 mm",
-    image: "/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.jpeg",
+    image: "/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.webp",
     specs: ["Active Fluidics™ Real-time Chamber Stability", "Ozil® Torsional Ultrasound Efficiency", "Needle-Free Topical Anesthesia Safe", "Sub-2mm Micro-Incision Capability"],
   },
   {
@@ -194,7 +194,7 @@ const infrastructureList = [
       "Equipped with patented Stereo Coaxial Illumination (SCI) providing unmatched red-reflex visualization even under dense, mature cataracts and complex retinal surgeries.",
     statLabel: "Optical Clarity",
     statValue: "Sub-Millimeter",
-    image: "/images/IMG_5973-1-1-scaled.jpeg",
+    image: "/images/IMG_5973-1-1-scaled.webp",
     specs: ["Stereo Coaxial Illumination (SCI) Technology", "Integrated High-Definition Surgical Video", "Deep Depth-of-Field Ergonomic Optics", "Apochromatic Multi-Coated Lens Array"],
   },
   {
@@ -206,7 +206,7 @@ const infrastructureList = [
       "Ultra-high resolution spectral domain optical coherence tomography that captures micron-level cross-sections of the retina, macula, and optic nerve fiber layer for early detection of glaucoma and diabetes.",
     statLabel: "Scan Resolution",
     statValue: "5 Microns",
-    image: "/images/IMG_5969-1-scaled.jpeg",
+    image: "/images/IMG_5969-1-scaled.webp",
     specs: ["5-Micron Cross-Sectional Axial Resolution", "Macular Thickness & Glaucoma Guided Analysis", "Humphrey Automated Visual Field Perimetry", "Non-Contact Retinal Angiography Mapping"],
   },
 ];
@@ -263,7 +263,7 @@ const corporateFaqs = [
   },
   {
     q: "How can I book an appointment with a specific super-specialist surgeon?",
-    a: "You can book directly via our online booking concierge, call our dedicated hospital desk at +91 92336 17885, or connect with our WhatsApp patient coordinators. Walk-in consultations are also accepted during regular OPD hours (Mon–Sat: 9:00 AM – 7:00 PM), while ocular trauma and retinal emergencies are triaged 24/7.",
+    a: "You can book directly via our online booking concierge, call our dedicated hospital desk at +91 92336 17885 / +91 69090 45910, or connect with our WhatsApp patient coordinators. Walk-in consultations are also accepted during regular OPD hours (10:00 AM – 5:00 PM, Thursday Closed), while ocular trauma and retinal emergencies are triaged 24/7.",
   },
 ];
 
@@ -317,20 +317,23 @@ export default function Home2Page() {
           <div className="flex items-center gap-5 text-slate-300">
             <div className="hidden md:flex items-center gap-1.5 text-slate-400">
               <Clock className="w-3.5 h-3.5 text-sky-400" />
-              <span>OPD Consultation: Mon - Sat 9:00 AM – 7:00 PM</span>
+              <span>OPD Consultation: 10:00 AM – 5:00 PM (Thu Closed)</span>
             </div>
             <span className="hidden md:inline text-slate-700">|</span>
             <div className="flex items-center gap-2">
               <span className="px-2 py-0.5 rounded-full bg-rose-950/80 text-rose-300 border border-rose-800/60 font-bold text-[10px] tracking-wide">
                 24/7 TRAUMA READY
               </span>
-              <a
-                href={`tel:${siteConfig.phoneClean}`}
-                className="font-bold text-white hover:text-sky-300 transition-colors flex items-center gap-1"
-              >
+              <div className="flex items-center gap-1.5 font-bold text-white text-xs">
                 <Phone className="w-3 h-3 text-sky-400" />
-                <span>{siteConfig.phone}</span>
-              </a>
+                <a href={`tel:${siteConfig.phoneClean}`} className="hover:text-sky-300 transition-colors">
+                  {siteConfig.phone}
+                </a>
+                <span className="text-slate-600">/</span>
+                <a href={`tel:${siteConfig.altPhoneClean}`} className="hover:text-sky-300 transition-colors">
+                  {siteConfig.altPhone}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -437,7 +440,7 @@ export default function Home2Page() {
                 {/* Grand Frame */}
                 <div className="relative rounded-3xl overflow-hidden border-2 border-sky-400/30 shadow-2xl shadow-sky-950/70 bg-slate-900 aspect-[4/4.2]">
                   <Image
-                    src="/images/Why-us.jpg"
+                    src="/images/Why-us.webp"
                     alt="Ashvini Netralaya Modular Laminar Flow OT"
                     fill
                     className="object-cover object-center scale-[1.02] hover:scale-105 transition-transform duration-700"
@@ -1051,7 +1054,7 @@ export default function Home2Page() {
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20">
                   <p className="text-2xl sm:text-3xl font-extrabold text-white font-sans">₹50/-</p>
                   <p className="text-xs font-bold text-sky-200 mt-1">OPD Consultation</p>
-                  <p className="text-[11px] text-slate-200 mt-0.5">Everyday 10:30 AM to 2:00 PM</p>
+                  <p className="text-[11px] text-slate-200 mt-0.5">10:00 AM to 5:00 PM (Thursday Closed)</p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/20">
@@ -1072,7 +1075,7 @@ export default function Home2Page() {
             <div className="lg:col-span-4 bg-white/10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white/25 flex flex-col items-center text-center space-y-4">
               <div className="relative w-28 h-28 rounded-2xl overflow-hidden bg-white p-2.5 shadow-xl">
                 <Image
-                  src="/images/AN-1080-by-1080-SDY-logo.png"
+                  src="/images/AN-1080-by-1080-SDY-logo.webp"
                   alt="Sarva Drishti Yojana Logo"
                   fill
                   className="object-contain"
@@ -1095,13 +1098,22 @@ export default function Home2Page() {
                 >
                   Scheme Guidelines &amp; Criteria
                 </Link>
-                <a
-                  href={`tel:${siteConfig.phoneClean}`}
-                  className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 bg-sky-950/60 hover:bg-sky-950 text-white font-semibold text-xs rounded-xl border border-white/30 transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-sky-300" />
-                  <span>Call Desk: {siteConfig.phone}</span>
-                </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <a
+                    href={`tel:${siteConfig.phoneClean}`}
+                    className="inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-sky-950/60 hover:bg-sky-950 text-white font-semibold text-xs rounded-xl border border-white/30 transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-sky-300" />
+                    <span>{siteConfig.phone}</span>
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.altPhoneClean}`}
+                    className="inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-sky-950/60 hover:bg-sky-950 text-white font-semibold text-xs rounded-xl border border-white/30 transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-sky-300" />
+                    <span>{siteConfig.altPhone}</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1303,10 +1315,17 @@ export default function Home2Page() {
             </button>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="px-7 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-xs sm:text-sm rounded-xl border border-white/20 transition-all backdrop-blur-md flex items-center gap-2"
+              className="px-6 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-xs sm:text-sm rounded-xl border border-white/20 transition-all backdrop-blur-md flex items-center gap-2"
             >
               <Phone className="w-4 h-4 text-sky-400" />
-              <span>Helpline: {siteConfig.phone}</span>
+              <span>{siteConfig.phone}</span>
+            </a>
+            <a
+              href={`tel:${siteConfig.altPhoneClean}`}
+              className="px-6 py-3.5 bg-white/10 hover:bg-white/15 text-white font-semibold text-xs sm:text-sm rounded-xl border border-white/20 transition-all backdrop-blur-md flex items-center gap-2"
+            >
+              <Phone className="w-4 h-4 text-sky-400" />
+              <span>{siteConfig.altPhone}</span>
             </a>
           </div>
 

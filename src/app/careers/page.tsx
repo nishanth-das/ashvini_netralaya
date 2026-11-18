@@ -562,7 +562,14 @@ export default function CareersPage() {
               className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 sm:py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition-colors"
             >
               <Phone className="w-3.5 h-3.5 text-sky-400" />
-              <span>Call HR Desk: {siteConfig.phone}</span>
+              <span>Call: {siteConfig.phone}</span>
+            </a>
+            <a
+              href={`tel:${siteConfig.altPhoneClean}`}
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 sm:py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs border border-white/20 transition-colors"
+            >
+              <Phone className="w-3.5 h-3.5 text-sky-400" />
+              <span>Call: {siteConfig.altPhone}</span>
             </a>
             <a
               href={siteConfig.whatsappUrl}

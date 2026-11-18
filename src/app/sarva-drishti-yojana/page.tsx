@@ -42,7 +42,7 @@ export default function SarvaDrishtiYojanaPage() {
             <div className="flex flex-col md:flex-row items-center gap-5 sm:gap-6 pb-6 border-b border-sky-200/60">
               <div className="relative w-24 h-24 sm:w-32 sm:h-32 rounded-2xl overflow-hidden shadow-md flex-shrink-0 bg-white p-2">
                 <Image
-                  src="/images/AN-1080-by-1080-SDY-logo.png"
+                  src="/images/AN-1080-by-1080-SDY-logo.webp"
                   alt="Sarva Drishti Yojana Logo"
                   fill
                   className="object-contain"
@@ -91,11 +91,11 @@ export default function SarvaDrishtiYojanaPage() {
                 <ul className="space-y-2 text-xs sm:text-sm text-slate-600">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span><strong>Timings:</strong> 10:30 AM to 2:00 PM</span>
+                    <span><strong>Timings:</strong> 10:00 AM to 5:00 PM</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span>Thursday &amp; Sunday Closed</span>
+                    <span>Thursday Closed</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -190,7 +190,7 @@ export default function SarvaDrishtiYojanaPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
               <Image
-                src="/images/ion-fet-QRawWgV6gmo-unsplash-1-scaled.jpg"
+                src="/images/ion-fet-QRawWgV6gmo-unsplash-1-scaled.webp"
                 alt="Community Vision Outreach Camp"
                 fill
                 className="object-cover"
@@ -198,7 +198,7 @@ export default function SarvaDrishtiYojanaPage() {
             </div>
             <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-md">
               <Image
-                src="/images/alexander-grey-VDTVPBP22HU-unsplash-1-scaled.jpg"
+                src="/images/alexander-grey-VDTVPBP22HU-unsplash-1-scaled.webp"
                 alt="Doctor examining patient with precision"
                 fill
                 className="object-cover"

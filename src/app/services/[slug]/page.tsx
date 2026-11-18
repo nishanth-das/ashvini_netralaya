@@ -760,13 +760,22 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                     <span>Instant WhatsApp Consultation</span>
                   </a>
 
-                  <a
-                    href={`tel:${siteConfig.phoneClean}`}
-                    className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-[#1c88c6] hover:bg-[#1578b0] text-white font-bold text-xs sm:text-sm tracking-wide shadow-md transition-all active:scale-95"
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span>Call Care Desk: {siteConfig.phone}</span>
-                  </a>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <a
+                      href={`tel:${siteConfig.phoneClean}`}
+                      className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-[#1c88c6] hover:bg-[#1578b0] text-white font-bold text-xs tracking-wide shadow-md transition-all active:scale-95"
+                    >
+                      <Phone className="w-3.5 h-3.5" />
+                      <span>{siteConfig.phone}</span>
+                    </a>
+                    <a
+                      href={`tel:${siteConfig.altPhoneClean}`}
+                      className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-full bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs tracking-wide shadow-md transition-all active:scale-95"
+                    >
+                      <Phone className="w-3.5 h-3.5" />
+                      <span>{siteConfig.altPhone}</span>
+                    </a>
+                  </div>
                 </div>
 
                 {/* Insurance & Quality Assurance */}
@@ -788,7 +797,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 {/* Hospital Hours Box */}
                 <div className="p-4 rounded-xl bg-sky-50/70 border border-sky-100 text-xs text-slate-700 space-y-1">
                   <p className="font-bold text-[#1c88c6]">OPD Consultation Hours</p>
-                  <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                  <p>10:00 AM - 5:00 PM (Thursday Closed)</p>
                   <p className="text-[11px] text-slate-500">Emergency Eye Trauma: 24/7</p>
                   <p className="pt-1.5 font-semibold text-slate-800 text-[11px]">
                     📍 {siteConfig.address.full}

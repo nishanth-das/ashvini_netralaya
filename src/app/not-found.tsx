@@ -47,6 +47,13 @@ export default function NotFound() {
           >
             {siteConfig.phone}
           </a>
+          {" / "}
+          <a
+            href={`tel:${siteConfig.altPhoneClean}`}
+            className="font-bold text-[#1c88c6] hover:underline"
+          >
+            {siteConfig.altPhone}
+          </a>
         </div>
       </div>
     </div>

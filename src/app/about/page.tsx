@@ -8,12 +8,12 @@ import { inHouseDoctors } from "@/data/doctors";
 export const metadata: Metadata = {
   title: "About Us | Tripura's First NABH-Accredited Eye Hospital",
   description:
-    "Learn about Ashvini Netralaya, established in 2022 in Agartala. First NABH-accredited Superspeciality Eye Hospital in Tripura, led by Dr. Anurag Majumdar and Dr. Subrata Saha.",
+    "Learn about Ashvini Netralaya, established in 2023 in Agartala. First NABH-accredited Superspeciality Eye Hospital in Tripura, led by Dr. Anurag Majumdar and Dr. Subrata Saha.",
 };
 
 export default function AboutPage() {
   const leadership = inHouseDoctors.filter(
-    (d) => d.role === "Medical Director" || d.role === "Chief Operating Officer"
+    (d) => d.id === "dr-anurag-majumdar" || d.id === "dr-subrata-saha"
   );
 
   return (
@@ -38,7 +38,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 relative">
               <div className="relative w-full aspect-square max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                 <Image
-                  src="/images/About-Us.jpg"
+                  src="/images/About-Us.webp"
                   alt="About Ashvini Netralaya"
                   fill
                   className="object-cover"
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
               <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed">
                 <p>
-                  Established in 2022, <strong>Ashvini Netralaya</strong> (A unit of Ashvini Eye Care Pvt. Ltd.) is the first Superspeciality Eye Hospital in the State of Tripura, offering all major subspecialities of Ophthalmology under one roof, including Cataract and Refractive, Retina, Glaucoma, Oculoplasty, and Paediatric Ophthalmology. We are also proud to be{" "}
+                  Established in 2023, <strong>Ashvini Netralaya</strong> (A unit of Ashvini Eye Care Pvt. Ltd.) is the first Superspeciality Eye Hospital in the State of Tripura, offering all major subspecialities of Ophthalmology under one roof, including Cataract and Refractive, Retina, Glaucoma, Oculoplasty, and Paediatric Ophthalmology. We are also proud to be{" "}
                   <strong className="text-[#1c88c6]">Tripura’s first and only NABH-accredited Superspeciality Eye Hospital</strong>, setting a new benchmark for quality and patient safety in eye care.
                 </p>
                 <p>
@@ -97,9 +97,15 @@ export default function AboutPage() {
                 </Link>
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
-                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold rounded-full border border-slate-200 transition-all"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold rounded-full border border-slate-200 transition-all"
                 >
                   <span>Call: {siteConfig.phone}</span>
+                </a>
+                <a
+                  href={`tel:${siteConfig.altPhoneClean}`}
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold rounded-full border border-slate-200 transition-all"
+                >
+                  <span>Call: {siteConfig.altPhone}</span>
                 </a>
               </div>
             </div>
@@ -138,9 +144,16 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-900">{leader.name}</h3>
-                  <p className="text-xs font-bold text-[#1c88c6] uppercase tracking-wider mt-0.5">
-                    {leader.qualifications}
-                  </p>
+                  <div className="mt-1 space-y-0.5">
+                    <p className="text-xs sm:text-sm font-bold text-[#1c88c6] uppercase tracking-wider">
+                      {leader.degreesLine1 || leader.qualifications}
+                    </p>
+                    {leader.degreesLine2 && (
+                      <p className="text-xs font-semibold text-slate-600">
+                        {leader.degreesLine2}
+                      </p>
+                    )}
+                  </div>
                   <span className="inline-block mt-2 px-3 py-1 rounded-full bg-sky-50 text-sky-900 text-xs font-bold border border-sky-200">
                     {leader.role}
                   </span>

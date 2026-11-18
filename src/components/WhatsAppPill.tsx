@@ -12,13 +12,24 @@ export function WhatsAppPill() {
       {/* Expanded quick options */}
       {isOpen && (
         <div className="mb-3 flex flex-col items-end gap-2.5 animate-fadeIn">
-          {/* Call option */}
+          {/* Call option 1 */}
           <a
             href={`tel:${siteConfig.phoneClean}`}
             className="flex items-center gap-3 bg-white text-slate-800 px-4 py-2.5 rounded-full shadow-lg border border-slate-100 hover:bg-slate-50 transition-all text-xs font-semibold"
           >
             <span>Call: {siteConfig.phone}</span>
             <div className="w-8 h-8 rounded-full bg-[#1c88c6] text-white flex items-center justify-center">
+              <Phone className="w-4 h-4" />
+            </div>
+          </a>
+
+          {/* Call option 2 */}
+          <a
+            href={`tel:${siteConfig.altPhoneClean}`}
+            className="flex items-center gap-3 bg-white text-slate-800 px-4 py-2.5 rounded-full shadow-lg border border-slate-100 hover:bg-slate-50 transition-all text-xs font-semibold"
+          >
+            <span>Call: {siteConfig.altPhone}</span>
+            <div className="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center">
               <Phone className="w-4 h-4" />
             </div>
           </a>

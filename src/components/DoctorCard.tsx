@@ -47,18 +47,30 @@ export function DoctorCard({ doctor, onBookDoctor }: DoctorCardProps) {
         </div>
 
         {/* Doctor Information */}
-        <div className="space-y-1.5">
+        <div className="space-y-2">
           <h3 className="font-bold text-lg text-slate-900 group-hover:text-[#1c88c6] transition-colors leading-snug font-sans">
             {doctor.name}
           </h3>
 
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700 text-xs font-semibold">
-            <Award className="w-3 h-3 text-[#1c88c6]" />
-            <span>{doctor.qualifications}</span>
+          {/* Degrees in Two Lines with increased, readable font */}
+          <div className="min-h-[50px] flex items-center justify-center">
+            <div className="inline-flex items-center justify-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-50 border border-slate-200/80 shadow-2xs">
+              <Award className="w-4 h-4 text-[#1c88c6] shrink-0" />
+              <div className="flex flex-col items-center justify-center text-center leading-tight">
+                <span className="block text-xs sm:text-[13px] font-bold text-slate-900 tracking-tight whitespace-nowrap">
+                  {doctor.degreesLine1 || doctor.qualifications}
+                </span>
+                {doctor.degreesLine2 && (
+                  <span className="block text-xs sm:text-[13px] font-bold text-slate-800 tracking-tight whitespace-nowrap pt-0.5">
+                    {doctor.degreesLine2}
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
 
           {doctor.role && (
-            <div className="pt-1">
+            <div className="pt-0.5 min-h-[30px] flex items-center justify-center">
               <span className="inline-block px-3 py-1 text-xs font-bold rounded-full bg-sky-50 text-[#1c88c6] border border-sky-200/80">
                 {doctor.role}
               </span>
@@ -66,9 +78,16 @@ export function DoctorCard({ doctor, onBookDoctor }: DoctorCardProps) {
           )}
 
           {doctor.department && (
-            <p className="text-xs text-slate-600 leading-relaxed pt-2 line-clamp-2">
-              {doctor.department}
-            </p>
+            <div className="text-xs text-slate-600 leading-relaxed min-h-[38px] flex flex-col items-center justify-center px-1 text-center">
+              {doctor.departmentLine1 && doctor.departmentLine2 ? (
+                <>
+                  <span className="block whitespace-nowrap">{doctor.departmentLine1}</span>
+                  <span className="block whitespace-nowrap">{doctor.departmentLine2}</span>
+                </>
+              ) : (
+                <span>{doctor.department}</span>
+              )}
+            </div>
           )}
         </div>
       </div>

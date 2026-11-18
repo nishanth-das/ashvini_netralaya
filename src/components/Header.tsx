@@ -39,16 +39,11 @@ export function Header({ onOpenBooking }: HeaderProps) {
       {/* 1. Top Institutional & Emergency Bar */}
       <div className="bg-slate-50 text-slate-600 text-[10.5px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-slate-200/90">
         <div className="max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 sm:gap-2 text-center sm:text-left">
-          {/* Left: NABH Certification & Hospital Location */}
-          <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center sm:justify-start">
-            <span className="inline-flex items-start sm:items-center gap-1 text-sky-800 font-semibold tracking-tight sm:tracking-wide leading-snug">
-              <ShieldCheck className="w-3.5 h-3.5 text-sky-600 shrink-0 mt-0.5 sm:mt-0" />
+          {/* Left: NABH Certification */}
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 text-sky-800 font-semibold tracking-tight sm:tracking-wide whitespace-nowrap">
+              <ShieldCheck className="w-3.5 h-3.5 text-sky-600 shrink-0" />
               <span>Tripura&apos;s 1st NABH-Accredited Superspeciality Eye Hospital</span>
-            </span>
-            <span className="hidden lg:inline text-slate-300">•</span>
-            <span className="hidden lg:inline-flex items-center gap-1 text-slate-500">
-              <MapPin className="w-3 h-3 text-slate-400 shrink-0" />
-              <span>Bijoykumar Chowmuhani, Agartala</span>
             </span>
           </div>
 
@@ -56,17 +51,27 @@ export function Header({ onOpenBooking }: HeaderProps) {
           <div className="flex items-center gap-3 sm:gap-4 text-[11px] sm:text-xs shrink-0">
             <div className="hidden sm:flex items-center gap-1.5 text-slate-600">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span>OPD: 9:00 AM – 7:00 PM</span>
+              <span>OPD: 10:00 AM – 5:00 PM (Thu Closed)</span>
             </div>
             <span className="hidden sm:inline text-slate-300">|</span>
             <div className="flex items-center gap-3">
-              <a
-                href={`tel:${siteConfig.phoneClean}`}
-                className="inline-flex items-center gap-1 text-slate-800 font-semibold hover:text-sky-600 transition-colors"
-              >
+              <div className="inline-flex items-center gap-1 text-slate-800 font-semibold">
                 <Phone className="w-3 h-3 text-sky-600 shrink-0" />
-                <span>Helpline: {siteConfig.phone}</span>
-              </a>
+                <span className="hidden md:inline text-slate-500 font-normal">Helpline:</span>
+                <a
+                  href={`tel:${siteConfig.phoneClean}`}
+                  className="hover:text-sky-600 transition-colors"
+                >
+                  +91 92336 17885
+                </a>
+                <span className="text-slate-300">/</span>
+                <a
+                  href={`tel:${siteConfig.altPhoneClean}`}
+                  className="hover:text-sky-600 transition-colors"
+                >
+                  +91 69090 45910
+                </a>
+              </div>
               <a
                 href={siteConfig.whatsappUrl}
                 target="_blank"
@@ -88,7 +93,7 @@ export function Header({ onOpenBooking }: HeaderProps) {
             {/* Hospital Logo */}
             <Link href="/" className="flex items-center min-w-0 shrink py-1.5 group">
               <Image
-                src="/images/AN-Website-name-logo-e1773034551124-1024x206.png"
+                src="/images/AN-Website-name-logo-e1773034551124-1024x206.webp"
                 alt="Ashvini Netralaya - Superspeciality Eye Hospital"
                 width={270}
                 height={54}
@@ -196,24 +201,31 @@ export function Header({ onOpenBooking }: HeaderProps) {
               <div className="grid grid-cols-2 gap-2 pt-0.5">
                 <a
                   href={`tel:${siteConfig.phoneClean}`}
-                  className="py-3 px-3 bg-black/25 text-white rounded-xl text-xs font-semibold text-center flex items-center justify-center gap-1.5"
+                  className="py-2.5 px-2 bg-black/25 text-white rounded-xl text-[11px] font-semibold text-center flex items-center justify-center gap-1"
                 >
-                  <Phone className="w-3.5 h-3.5 text-sky-300" />
-                  <span>Call Hospital</span>
+                  <Phone className="w-3 h-3 text-sky-300 shrink-0" />
+                  <span className="truncate">+91 92336 17885</span>
                 </a>
                 <a
-                  href={siteConfig.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="py-3 px-3 bg-[#25D366] text-white rounded-xl text-xs font-semibold text-center flex items-center justify-center gap-1.5"
+                  href={`tel:${siteConfig.altPhoneClean}`}
+                  className="py-2.5 px-2 bg-black/25 text-white rounded-xl text-[11px] font-semibold text-center flex items-center justify-center gap-1"
                 >
-                  <MessageCircle className="w-3.5 h-3.5" />
-                  <span>WhatsApp</span>
+                  <Phone className="w-3 h-3 text-sky-300 shrink-0" />
+                  <span className="truncate">+91 69090 45910</span>
                 </a>
               </div>
+              <a
+                href={siteConfig.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-2.5 px-3 bg-[#25D366] text-white rounded-xl text-xs font-semibold text-center flex items-center justify-center gap-1.5"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                <span>WhatsApp Desk</span>
+              </a>
               <div className="pt-2 text-center text-[11px] text-sky-200/80 flex items-center justify-center gap-1.5">
                 <Clock className="w-3 h-3 shrink-0" />
-                <span>OPD: Mon – Sat 9:00 AM – 7:00 PM • Agartala</span>
+                <span>OPD: 10:00 AM – 5:00 PM • Thursday Closed • Agartala</span>
               </div>
             </div>
           </div>

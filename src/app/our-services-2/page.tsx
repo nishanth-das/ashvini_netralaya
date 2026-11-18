@@ -423,7 +423,7 @@ export default function ServicesPage() {
       <section className="relative py-16 sm:py-20 text-white text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/New-Project-1.png"
+            src="/images/New-Project-1.webp"
             alt="Consult Ashvini Netralaya Specialists"
             fill
             className="object-cover object-center"
@@ -453,10 +453,17 @@ export default function ServicesPage() {
             </a>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-6 py-3.5 bg-white/20 hover:bg-white/30 text-white border border-white/40 font-medium text-sm rounded-full transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3.5 bg-white/20 hover:bg-white/30 text-white border border-white/40 font-medium text-sm rounded-full transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span>Call: {siteConfig.phone}</span>
+            </a>
+            <a
+              href={`tel:${siteConfig.altPhoneClean}`}
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3.5 bg-white/20 hover:bg-white/30 text-white border border-white/40 font-medium text-sm rounded-full transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              <span>Call: {siteConfig.altPhone}</span>
             </a>
           </div>
         </div>

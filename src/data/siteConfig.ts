@@ -9,29 +9,36 @@ export const siteConfig = {
   url: "https://ashvinieyecare.in",
   phone: "+91 92336 17885",
   phoneClean: "+919233617885",
-  altPhone: "+91 84019 56221",
+  altPhone: "+91 69090 45910",
+  altPhoneClean: "+916909045910",
+  phoneDisplay: "+91 92336 17885 / +91 69090 45910",
   whatsapp: "919233617885",
   whatsappUrl: "https://api.whatsapp.com/send?phone=919233617885",
   email: "contact@ashvinieyecare.in",
   managerEmail: "hospitalmanager@ashvinieyecare.in",
   address: {
-    street: "Bijoykumar Chowmuhani, Opposite Eastern Scientific Corporation",
+    street: "Bijoykumar Chowmuhani",
     area: "Krishna Nagar",
     city: "Agartala",
     state: "Tripura",
     pincode: "799001",
     country: "India",
-    full: "Bijoykumar Chowmuhani, Opposite Eastern Scientific Corporation, Krishna Nagar, Agartala, Tripura - 799001",
+    full: "Bijoykumar Chowmuhani, Krishna Nagar, Agartala, Tripura - 799001",
   },
   mapEmbedUrl:
-    "https://maps.google.com/maps?q=Ashvini%20Netralaya%2C%20Bijoykumar%20Chowmuhani%2C%20opposite%20Eastern%20Scientific%20Corporation%2C%20Agartala%2C%20Tripura%20799001&t=m&z=16&output=embed&iwloc=near",
+    "https://maps.google.com/maps?q=Ashvini%20Netralaya%2C%20Bijoykumar%20Chowmuhani%2C%20Agartala%2C%20Tripura%20799001&t=m&z=16&output=embed&iwloc=near",
   googleMapsLink:
     "https://maps.google.com/?q=Ashvini+Netralaya+Agartala",
   facebookUrl:
     "https://www.facebook.com/people/Ashvini-Netralaya/100087267116044/",
+  bangladeshDesk: {
+    phone: "+91 69090 45693",
+    phoneClean: "+916909045693",
+    whatsapp: "916909045693",
+  },
   workingHours: {
-    general: "Mon - Sat: 9:00 AM - 7:00 PM",
-    opd: "10:30 AM - 2:00 PM",
+    general: "10:00 AM - 5:00 PM (Thursday Closed)",
+    opd: "10:00 AM - 5:00 PM (Thursday Closed)",
     emergency: "24/7 Emergency Care",
   },
 };

@@ -43,15 +43,9 @@ export function MapSection() {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">Hospital Timings</h4>
+                  <h4 className="font-bold text-sm text-slate-900 mb-1">OPD Timings</h4>
                   <p className="text-xs text-slate-600">
-                    OPD: {siteConfig.workingHours.opd}
-                  </p>
-                  <p className="text-xs text-slate-600">
-                    Clinic: {siteConfig.workingHours.general}
-                  </p>
-                  <p className="text-[11px] text-[#1c88c6] font-semibold mt-0.5">
-                    Thursday & Sunday: Closed for Routine OPD
+                    {siteConfig.workingHours.opd}
                   </p>
                 </div>
               </div>
@@ -61,12 +55,16 @@ export function MapSection() {
                   <Phone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm text-slate-900 mb-1">Emergency & Reception</h4>
+                  <h4 className="font-bold text-sm text-slate-900 mb-1">Emergency &amp; Reception</h4>
                   <p className="text-xs text-slate-600">
-                    Primary: {siteConfig.phone}
+                    <a href={`tel:${siteConfig.phoneClean}`} className="hover:text-[#1c88c6] transition-colors">
+                      Primary: {siteConfig.phone}
+                    </a>
                   </p>
                   <p className="text-xs text-slate-600">
-                    Enquiry: {siteConfig.altPhone}
+                    <a href={`tel:${siteConfig.altPhoneClean}`} className="hover:text-[#1c88c6] transition-colors">
+                      Helpline: {siteConfig.altPhone}
+                    </a>
                   </p>
                 </div>
               </div>

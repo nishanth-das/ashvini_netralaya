@@ -98,6 +98,13 @@ export function BookingModal({
                   <Phone className="w-4 h-4" />
                   <span>Call {siteConfig.phone}</span>
                 </a>
+                <a
+                  href={`tel:${siteConfig.altPhoneClean}`}
+                  className="inline-flex items-center gap-2 px-4 py-2.5 bg-slate-800 text-white rounded-full text-sm font-semibold"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>Call {siteConfig.altPhone}</span>
+                </a>
                 <button
                   onClick={() => {
                     setSubmitted(false);
@@ -222,8 +229,12 @@ export function BookingModal({
 
               <p className="text-center text-xs text-slate-400">
                 You can also call us directly at{" "}
-                <a href={`tel:${siteConfig.phoneClean}`} className="text-[#1c88c6] font-semibold">
+                <a href={`tel:${siteConfig.phoneClean}`} className="text-[#1c88c6] font-semibold hover:underline">
                   {siteConfig.phone}
+                </a>
+                {" / "}
+                <a href={`tel:${siteConfig.altPhoneClean}`} className="text-[#1c88c6] font-semibold hover:underline">
+                  {siteConfig.altPhone}
                 </a>
               </p>
             </form>

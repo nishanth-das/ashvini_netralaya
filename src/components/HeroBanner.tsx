@@ -6,16 +6,16 @@ import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const slides = [
   {
-    image: "/images/Home-Banner-1.jpg",
-    alt: "Welcome to Ashvini Netralaya - Superspeciality Eye Hospital Agartala",
+    image: "/images/Hero_Banner01.webp",
+    alt: "Welcome to Ashvini Netralaya - Agartala's First Superspeciality Eye Hospital",
   },
   {
-    image: "/images/Home-Banner-2.jpg",
-    alt: "Get Your Eyes Checked Now - Advanced Diagnostics & Treatments",
+    image: "/images/Hero_Banner02.webp",
+    alt: "Consult with our Expert Surgeons - Book an Appointment at Ashvini Netralaya",
   },
   {
-    image: "/images/Home-Banner-03-1.jpg",
-    alt: "Tripura's First NABH-Accredited Eye Hospital - Advanced Eye Care",
+    image: "/images/Hero_Banner03.webp",
+    alt: "Get Your Eyes Checked Now - Advanced Eye Care at Ashvini Netralaya",
   },
 ];
 

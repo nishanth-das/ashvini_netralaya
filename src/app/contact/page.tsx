@@ -111,8 +111,8 @@ export default function ContactPage() {
                       </a>
                     </p>
                     <p className="text-xs text-slate-600 mt-0.5">
-                      Enquiry Line:{" "}
-                      <a href={`tel:${siteConfig.altPhone.replace(/\s+/g, '')}`} className="font-semibold text-slate-900 hover:text-[#1c88c6]">
+                      Helpline 2:{" "}
+                      <a href={`tel:${siteConfig.altPhoneClean}`} className="font-semibold text-slate-900 hover:text-[#1c88c6]">
                         {siteConfig.altPhone}
                       </a>
                     </p>
@@ -145,15 +145,9 @@ export default function ContactPage() {
                     <Clock className="w-5 h-5" />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="font-bold text-sm text-slate-900 mb-1">OPD &amp; Working Hours</h3>
+                    <h3 className="font-bold text-sm text-slate-900 mb-1">OPD Timings</h3>
                     <p className="text-xs text-slate-600">
-                      <strong>General Clinic:</strong> {siteConfig.workingHours.general}
-                    </p>
-                    <p className="text-xs text-slate-600 mt-0.5">
-                      <strong>Sarva Drishti OPD:</strong> {siteConfig.workingHours.opd}
-                    </p>
-                    <p className="text-[11px] text-amber-700 font-medium mt-1">
-                      Note: Thursday &amp; Sunday closed for routine outpatient checkups.
+                      <strong>OPD Hours:</strong> {siteConfig.workingHours.opd}
                     </p>
                   </div>
                 </div>

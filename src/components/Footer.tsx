@@ -26,7 +26,7 @@ export function Footer() {
             <Link href="/" className="inline-block">
               <div className="relative w-44 sm:w-52 h-12 sm:h-14">
                 <Image
-                  src="/images/AN-Website-name-logo-e1773034551124-1024x206.png"
+                  src="/images/AN-Website-name-logo-e1773034551124-1024x206.webp"
                   alt="Ashvini Netralaya Logo"
                   fill
                   className="object-contain object-left"
@@ -35,7 +35,7 @@ export function Footer() {
             </Link>
 
             <p className="text-sm text-slate-300 leading-relaxed">
-              Established in 2022, Ashvini Netralaya (A unit of Ashvini Eye Care Pvt. Ltd.) is <strong className="text-white font-semibold">Tripura’s first and only NABH-accredited Superspeciality Eye Hospital</strong>, delivering advanced ophthalmic microsurgery, vitreo-retina care, and pediatric ophthalmology.
+              Established in 2023, Ashvini Netralaya (A unit of Ashvini Eye Care Pvt. Ltd.) is <strong className="text-white font-semibold">Tripura’s first and only NABH-accredited Superspeciality Eye Hospital</strong>, delivering advanced ophthalmic microsurgery, vitreo-retina care, and pediatric ophthalmology.
             </p>
 
             {/* NABH Seal Callout */}
@@ -55,18 +55,30 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
                 <span>{siteConfig.address.full}</span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-sky-400 shrink-0" />
-                <a
-                  href={`tel:${siteConfig.phoneClean}`}
-                  className="text-white hover:text-sky-300 font-semibold transition-colors"
-                >
-                  {siteConfig.phone} (Reception &amp; OPD)
-                </a>
+              <div className="flex items-start gap-2.5">
+                <Phone className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
+                <div className="space-y-0.5">
+                  <div className="flex flex-wrap items-center gap-x-1.5 font-semibold">
+                    <a
+                      href={`tel:${siteConfig.phoneClean}`}
+                      className="text-white hover:text-sky-300 transition-colors"
+                    >
+                      {siteConfig.phone}
+                    </a>
+                    <span className="text-slate-400">/</span>
+                    <a
+                      href={`tel:${siteConfig.altPhoneClean}`}
+                      className="text-white hover:text-sky-300 transition-colors"
+                    >
+                      {siteConfig.altPhone}
+                    </a>
+                  </div>
+                  <p className="text-[11px] text-slate-400">Reception &amp; OPD Helpline</p>
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-sky-400 shrink-0" />
-                <span>OPD: Mon – Sat 9:00 AM – 7:00 PM</span>
+                <span>OPD: 10:00 AM – 5:00 PM (Thursday Closed)</span>
               </div>
             </div>
           </div>
@@ -84,6 +96,7 @@ export function Footer() {
                 { name: "Sarva Drishti Yojana", href: "/sarva-drishti-yojana" },
                 { name: "Careers & Openings", href: "/careers" },
                 { name: "Bangladesh Patients (বাংলা)", href: "/bangladesh/eye-care" },
+                { name: "Bangladesh Patients (English)", href: "/bangladesh/en" },
                 { name: "Doctor Profiles", href: "/#doctors" },
                 { name: "Health Articles", href: "/blogs" },
                 { name: "Contact & Directions", href: "/contact" },

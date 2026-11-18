@@ -25,6 +25,7 @@ import {
   Building2,
   Banknote,
   FileCheck2,
+  Globe,
 } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
@@ -58,9 +59,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteConfig.url}/images/Home-Banner-1.jpg`,
+        url: `${siteConfig.url}/images/Hero_Banner01.webp`,
         width: 1200,
-        height: 630,
+        height: 650,
         alt: "অশ্বিনী নেত্রালয় - আগরতলা চক্ষু হাসপাতাল",
       },
     ],
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
 };
 
 export default function BangladeshEyeCarePage() {
-  const whatsappPreFilledUrl = `https://api.whatsapp.com/send?phone=${siteConfig.whatsapp}&text=${encodeURIComponent(
+  const whatsappPreFilledUrl = `https://api.whatsapp.com/send?phone=${siteConfig.bangladeshDesk.whatsapp}&text=${encodeURIComponent(
     "নমস্কার অশ্বিনী নেত্রালয়, আমি বাংলাদেশ থেকে চোখের চিকিৎসার বিষয়ে পরামর্শের জন্য যোগাযোগ করছি। অনুগ্রহ করে ডাক্তার দেখানোর সময় ও ভিসা ইনভাইটেশন লেটার সংক্রান্ত তথ্য জানাবেন।"
   )}`;
 
@@ -76,7 +77,7 @@ export default function BangladeshEyeCarePage() {
     {
       question: "বাংলাদেশ থেকে আগরতলায় চোখের চিকিৎসা করাতে আসার নিয়ম কী?",
       answer:
-        "প্রথমে আপনার পূর্ববর্তী প্রেসক্রিপশন ও চোখের টেস্ট রিপোর্ট আমাদের অফিশিয়াল হোয়াটসঅ্যাপ নম্বরে (+91 92336 17885) পাঠান। আমাদের সিনিয়র চক্ষু সার্জনরা রিপোর্ট দেখে প্রাথমিক মূল্যায়ন ও চিকিৎসার সম্ভাব্য খরচ জানিয়ে দেবেন। এরপর চিকিৎসার সুবিধার্থে হাসপাতাল থেকে 'মেডিকেল ভিসা আমন্ত্রণ পত্র' (Medical Visa Invitation Letter) প্রদান করা হবে, যা দিয়ে আপনি নিকটস্থ ভারতীয় ভিসা আবেদন কেন্দ্রে (IVAC) ভিসার আবেদন করতে পারবেন।",
+        "প্রথমে আপনার পূর্ববর্তী প্রেসক্রিপশন ও চোখের টেস্ট রিপোর্ট আমাদের অফিশিয়াল হোয়াটসঅ্যাপ নম্বরে (+91 69090 45693) পাঠান। আমাদের সিনিয়র চক্ষু সার্জনরা রিপোর্ট দেখে প্রাথমিক মূল্যায়ন ও চিকিৎসার সম্ভাব্য খরচ জানিয়ে দেবেন। এরপর চিকিৎসার সুবিধার্থে হাসপাতাল থেকে 'মেডিকেল ভিসা আমন্ত্রণ পত্র' (Medical Visa Invitation Letter) প্রদান করা হবে, যা দিয়ে আপনি নিকটস্থ ভারতীয় ভিসা আবেদন কেন্দ্রে (IVAC) ভিসার আবেদন করতে পারবেন।",
     },
     {
       question: "মেডিকেল ভিসার জন্য কি অশ্বিনী নেত্রালয় থেকে ইনভাইটেশন লেটার পাওয়া যাবে?",
@@ -126,11 +127,11 @@ export default function BangladeshEyeCarePage() {
     name: "অশ্বিনী নেত্রালয় (Ashvini Netralaya)",
     legalName: "Ashvini Eye Care Pvt. Ltd.",
     url: `${siteConfig.url}/bangladesh/eye-care`,
-    logo: `${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.png`,
-    image: `${siteConfig.url}/images/Home-Banner-1.jpg`,
+    logo: `${siteConfig.url}/images/Ashvini-Eye-Care-logo-01.webp`,
+    image: `${siteConfig.url}/images/Hero_Banner01.webp`,
     description:
       "ত্রিপুরার প্রথম ও একমাত্র NABH স্বীকৃত সুপারস্পেশালিটি চক্ষু হাসপাতাল। বাংলাদেশী রোগীদের জন্য আন্তর্জাতিক মানের ছানি অপারেশন, রেটিনা সার্জারি, গ্লুকোমা ও পেডিয়াট্রিক চোখের চিকিৎসা।",
-    telephone: siteConfig.phone,
+    telephone: siteConfig.bangladeshDesk.phone,
     priceRange: "₹₹",
     inLanguage: "bn",
     address: {
@@ -188,6 +189,16 @@ export default function BangladeshEyeCarePage() {
           </div>
 
           <div className="flex items-center gap-3 text-[11px] sm:text-xs">
+            {/* Language Switcher to English */}
+            <Link
+              href="/bangladesh/en"
+              className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-white/10 hover:bg-white/20 text-sky-200 hover:text-white transition-colors border border-white/15 font-medium"
+              title="View in English"
+            >
+              <Globe className="w-3.5 h-3.5 text-sky-300" />
+              <span>English Version</span>
+            </Link>
+            <span className="text-slate-600 hidden sm:inline">•</span>
             <a
               href={whatsappPreFilledUrl}
               target="_blank"
@@ -195,7 +206,7 @@ export default function BangladeshEyeCarePage() {
               className="text-[#25D366] hover:text-[#3ce67b] font-semibold flex items-center gap-1 transition-colors"
             >
               <MessageCircle className="w-3.5 h-3.5" />
-              <span>হোয়াটসঅ্যাপ: {siteConfig.phone}</span>
+              <span>হোয়াটসঅ্যাপ: {siteConfig.bangladeshDesk.phone}</span>
             </a>
           </div>
         </div>
@@ -220,6 +231,19 @@ export default function BangladeshEyeCarePage() {
                   <Award className="w-3.5 h-3.5" />
                   <span>১০,০০০+ সফল সার্জারির অভিজ্ঞতা</span>
                 </span>
+
+                {/* Inline Language Selector */}
+                <div className="inline-flex items-center p-0.5 rounded-full bg-white/10 border border-white/20 text-xs ml-auto sm:ml-0">
+                  <span className="px-2.5 py-0.5 rounded-full bg-sky-500 text-white font-semibold shadow-xs">
+                    বাংলা
+                  </span>
+                  <Link
+                    href="/bangladesh/en"
+                    className="px-2.5 py-0.5 rounded-full text-sky-200 hover:text-white font-medium transition-colors"
+                  >
+                    English
+                  </Link>
+                </div>
               </div>
 
               {/* Main Heading */}
@@ -273,13 +297,15 @@ export default function BangladeshEyeCarePage() {
                   <span>হোয়াটসঅ্যাপে রিপোর্ট পাঠান ও ভিসা সহায়তা নিন</span>
                 </a>
 
-                <a
-                  href={`tel:${siteConfig.phoneClean}`}
-                  className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-semibold text-xs sm:text-sm rounded-full backdrop-blur-md transition-colors"
-                >
-                  <Phone className="w-3.5 h-3.5 text-sky-300 shrink-0" />
-                  <span>সরাসরি কল: {siteConfig.phone}</span>
-                </a>
+                <div className="flex flex-wrap items-center gap-2">
+                  <a
+                    href={`tel:${siteConfig.bangladeshDesk.phoneClean}`}
+                    className="inline-flex items-center gap-2 px-4 py-3 bg-white/10 hover:bg-white/20 text-white border border-white/25 font-semibold text-xs sm:text-sm rounded-full backdrop-blur-md transition-colors"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-sky-300 shrink-0" />
+                    <span>কল: {siteConfig.bangladeshDesk.phone}</span>
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -288,7 +314,7 @@ export default function BangladeshEyeCarePage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/15 bg-slate-900">
                 <div className="relative w-full aspect-[16/11]">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.30.23-AM-1.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-2.30.23-AM-1.webp"
                     alt="অশ্বিনী নেত্রালয় আগরতলা - আন্তর্জাতিক চোখের চিকিৎসা"
                     fill
                     className="object-cover"
@@ -642,7 +668,7 @@ export default function BangladeshEyeCarePage() {
                 হোয়াটসঅ্যাপে আপনার বর্তমান চোখের প্রেসক্রিপশন ও রিপোর্ট পাঠান
               </h3>
               <p className="text-xs sm:text-[13.5px] text-slate-600 leading-relaxed font-normal">
-                আপনার বিদ্যমান চিকিৎসকের প্রেসক্রিপশন, চোখ পরীক্ষার রিপোর্ট বা চশমার পাওয়ার পরিষ্কার ছবি তুলে আমাদের ডেডিকেটেড হোয়াটসঅ্যাপ নম্বরে (+91 92336 17885) পাঠান।
+                আপনার বিদ্যমান চিকিৎসকের প্রেসক্রিপশন, চোখ পরীক্ষার রিপোর্ট বা চশমার পাওয়ার পরিষ্কার ছবি তুলে আমাদের ডেডিকেটেড হোয়াটসঅ্যাপ নম্বরে (+91 69090 45693) পাঠান।
               </p>
             </div>
 
@@ -734,7 +760,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-2.27.43-AM-1.webp"
                     alt="ছানি অপারেশন - ফ্যাকো সার্জারি"
                     fill
                     className="object-cover"
@@ -761,7 +787,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-2.13.30-AM.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-2.13.30-AM.webp"
                     alt="রেটিনা সার্জারি ও ডায়াবেটিক রেটিনোপ্যাথি"
                     fill
                     className="object-cover"
@@ -788,7 +814,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/G1.jpg"
+                    src="/images/G1.webp"
                     alt="গ্লুকোমা চিকিৎসা ও ট্র্যাবেকুলেক্টমি"
                     fill
                     className="object-cover"
@@ -815,7 +841,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/little-girl-checking-up-her-sight-ophthalmology-center-1-1-scaled.jpg"
+                    src="/images/little-girl-checking-up-her-sight-ophthalmology-center-1-1-scaled.webp"
                     alt="শিশুদের চোখের চিকিৎসা ও স্কুইন্ট সার্জারি"
                     fill
                     className="object-cover"
@@ -842,7 +868,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-3.10.23-AM-1.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-3.10.23-AM-1.webp"
                     alt="কার্ল জাইস HD-OCT ও উন্নত ডায়াগনস্টিকস"
                     fill
                     className="object-cover"
@@ -869,7 +895,7 @@ export default function BangladeshEyeCarePage() {
               <div className="space-y-2.5">
                 <div className="relative w-full h-40 rounded-lg overflow-hidden bg-slate-100">
                   <Image
-                    src="/images/WhatsApp-Image-2023-06-03-at-3.00.16-AM.jpeg"
+                    src="/images/WhatsApp-Image-2023-06-03-at-3.00.16-AM.webp"
                     alt="YAG লেজার ক্যাপসুলোটমি"
                     fill
                     className="object-cover"
@@ -981,7 +1007,7 @@ export default function BangladeshEyeCarePage() {
             <div className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-xs text-center space-y-3">
               <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
-                  src="/images/Dr-anurag.jpg"
+                  src="/images/Dr-anurag.webp"
                   alt="ডাঃ অনুরাগ মজুমদার"
                   fill
                   className="object-cover"
@@ -991,7 +1017,7 @@ export default function BangladeshEyeCarePage() {
                 <h3 className="font-bold text-base text-slate-900 font-bengali-heading">ডাঃ অনুরাগ মজুমদার</h3>
                 <p className="text-xs text-[#0c6ba1] font-semibold">MBBS, MS (Ophthalmology)</p>
                 <p className="text-xs sm:text-[13px] text-slate-600 mt-1 leading-relaxed font-normal">
-                  মেডিকেল ডিরেক্টর ও সিনিয়র কনসালট্যান্ট (ফ্যাকো ও অ্যান্টেরিওর সেগমেন্ট সার্জারি)
+                  চেয়ারম্যান ও সিইও (ফ্যাকো ও অ্যান্টেরিওর সেগমেন্ট সার্জারি)
                 </p>
               </div>
             </div>
@@ -1000,7 +1026,7 @@ export default function BangladeshEyeCarePage() {
             <div className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-xs text-center space-y-3">
               <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
-                  src="/images/Dr-Subrata.jpg"
+                  src="/images/Dr-Subrata.webp"
                   alt="ডাঃ সুব্রত সাহা"
                   fill
                   className="object-cover"
@@ -1010,7 +1036,7 @@ export default function BangladeshEyeCarePage() {
                 <h3 className="font-bold text-base text-slate-900 font-bengali-heading">ডাঃ সুব্রত সাহা</h3>
                 <p className="text-xs text-[#0c6ba1] font-semibold">MBBS, MS (Ophthalmology)</p>
                 <p className="text-xs sm:text-[13px] text-slate-600 mt-1 leading-relaxed font-normal">
-                  চিফ অপারেটিং অফিসার ও সিনিয়র আই সার্জন (ফ্যাকো ও রিফ্র্যাক্টিভ সার্জারি)
+                  চিফ অপারেটিং অফিসার (ফ্যাকো ও অ্যান্টেরিওর সেগমেন্ট সার্জারি)
                 </p>
               </div>
             </div>
@@ -1019,7 +1045,7 @@ export default function BangladeshEyeCarePage() {
             <div className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-xs text-center space-y-3">
               <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
-                  src="/images/Dr-Kaushick-1.jpg"
+                  src="/images/Dr-Kaushick-1.webp"
                   alt="ডাঃ কৌশিক বিশ্বাস"
                   fill
                   className="object-cover"
@@ -1038,7 +1064,7 @@ export default function BangladeshEyeCarePage() {
             <div className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-xs text-center space-y-3">
               <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
-                  src="/images/Dr-paruldeep.jpg"
+                  src="/images/Dr-paruldeep.webp"
                   alt="ডাঃ পারুলদীপ চাকমা"
                   fill
                   className="object-cover"
@@ -1140,22 +1166,22 @@ export default function BangladeshEyeCarePage() {
               className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white font-semibold text-xs sm:text-sm rounded-full shadow-lg shadow-emerald-950/30 transition-all transform active:scale-95"
             >
               <MessageCircle className="w-4 h-4 shrink-0" />
-              <span>হোয়াটসঅ্যাপে চ্যাট করুন: +91 92336 17885</span>
+              <span>হোয়াটসঅ্যাপে চ্যাট করুন: {siteConfig.bangladeshDesk.phone}</span>
             </a>
 
             <a
-              href={`tel:${siteConfig.phoneClean}`}
-              className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-6 sm:px-7 py-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-xs sm:text-sm rounded-full transition-colors shadow-sm"
+              href={`tel:${siteConfig.bangladeshDesk.phoneClean}`}
+              className="w-full sm:w-auto justify-center text-center inline-flex items-center gap-2 px-5 sm:px-6 py-3 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-xs sm:text-sm rounded-full transition-colors shadow-sm"
             >
               <Phone className="w-4 h-4 text-[#1c88c6] shrink-0" />
-              <span>কল করুন: {siteConfig.phone}</span>
+              <span>কল করুন: {siteConfig.bangladeshDesk.phone}</span>
             </a>
           </div>
 
           <div className="pt-5 border-t border-white/10 text-xs sm:text-sm text-sky-200 space-y-1">
             <p className="font-semibold text-white text-sm font-bengali-heading">📍 অশ্বিনী নেত্রালয় (Ashvini Netralaya)</p>
             <p className="text-sky-100 text-xs">বিজয়কুমার চৌমুহনী, আগরতলা, ত্রিপুরা – ৭৯৯০০১ (আখাউড়া সীমান্ত থেকে মাত্র ১৫ মিনিট)</p>
-            <p className="text-sky-200 text-xs pt-0.5">ওপিডি সময়: সোম – শনি (সকাল ৯:০০ – সন্ধ্যা ৭:০০)</p>
+            <p className="text-sky-200 text-xs pt-0.5">ওপিডি সময়: সকাল ১০:০০ – বিকেল ৫:০০ (শুধুমাত্র বৃহস্পতিবার বন্ধ)</p>
           </div>
         </div>
       </section>

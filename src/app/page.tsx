@@ -120,7 +120,7 @@ export default function HomePage() {
             <div className="bg-gradient-to-b from-white to-slate-50/70 rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center group hover:-translate-y-1">
               <div className="w-20 h-20 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Image
-                  src="/images/General-Medical.png"
+                  src="/images/General-Medical.webp"
                   alt="Experienced Surgeons"
                   width={48}
                   height={48}
@@ -142,7 +142,7 @@ export default function HomePage() {
             <div className="bg-gradient-to-b from-white to-slate-50/70 rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center group hover:-translate-y-1">
               <div className="w-20 h-20 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Image
-                  src="/images/Medical-Surgical.png"
+                  src="/images/Medical-Surgical.webp"
                   alt="Medical & Surgical Facilities"
                   width={48}
                   height={48}
@@ -164,7 +164,7 @@ export default function HomePage() {
             <div className="bg-gradient-to-b from-white to-slate-50/70 rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center group hover:-translate-y-1">
               <div className="w-20 h-20 rounded-2xl bg-sky-50 border border-sky-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 <Image
-                  src="/images/doctor-medical.png"
+                  src="/images/doctor-medical.webp"
                   alt="Community Outreach"
                   width={48}
                   height={48}
@@ -193,7 +193,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative flex justify-center">
               <div className="relative w-full max-w-[500px] aspect-square rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
                 <Image
-                  src="/images/About-Us.jpg"
+                  src="/images/About-Us.webp"
                   alt="About Ashvini Netralaya - Best Eye Hospital in Agartala"
                   fill
                   className="object-cover"
@@ -231,7 +231,7 @@ export default function HomePage() {
 
               <div className="space-y-4 text-sm sm:text-[15px] text-slate-600 leading-relaxed pt-1">
                 <p>
-                  Established in 2022, <strong className="text-slate-900">Ashvini Netralaya</strong> (A unit of Ashvini Eye Care Pvt. Ltd.) is the first Superspeciality Eye Hospital in the State of Tripura, offering all major subspecialities of Ophthalmology under one roof, including Cataract and Refractive, Retina, Glaucoma, Oculoplasty, and Paediatric Ophthalmology.
+                  Established in 2023, <strong className="text-slate-900">Ashvini Netralaya</strong> (A unit of Ashvini Eye Care Pvt. Ltd.) is the first Superspeciality Eye Hospital in the State of Tripura, offering all major subspecialities of Ophthalmology under one roof, including Cataract and Refractive, Retina, Glaucoma, Oculoplasty, and Paediatric Ophthalmology.
                 </p>
                 <p>
                   We are proud to be <strong className="text-slate-900 font-bold">Tripura’s first and only NABH-accredited Superspeciality Eye Hospital</strong>, setting an unprecedented benchmark for quality, surgical precision, and patient safety in eye care.
@@ -302,7 +302,7 @@ export default function HomePage() {
                 <div className="h-14 flex items-center mb-4 sm:mb-5">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center p-2 group-hover:scale-110 transition-transform">
                     <Image
-                      src="/images/tool-bok-medical.png"
+                      src="/images/tool-bok-medical.webp"
                       alt="Comprehensive Eye Checkup"
                       width={45}
                       height={42}
@@ -345,7 +345,7 @@ export default function HomePage() {
                 <div className="h-14 flex items-center mb-4 sm:mb-5">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center p-2 group-hover:scale-110 transition-transform">
                     <Image
-                      src="/images/bed-medical.png"
+                      src="/images/bed-medical.webp"
                       alt="Cataract Surgery - Phaco"
                       width={45}
                       height={29}
@@ -388,7 +388,7 @@ export default function HomePage() {
                 <div className="h-14 flex items-center mb-4 sm:mb-5">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center p-2 group-hover:scale-110 transition-transform">
                     <Image
-                  src="/images/generel-medical.png"
+                  src="/images/generel-medical.webp"
                   alt="Retina Surgeries"
                   width={45}
                   height={46}
@@ -431,7 +431,7 @@ export default function HomePage() {
                 <div className="h-14 flex items-center mb-4 sm:mb-5">
                   <div className="w-12 h-12 rounded-xl bg-sky-50 flex items-center justify-center p-2 group-hover:scale-110 transition-transform">
                     <Image
-                  src="/images/doctor-medical.png"
+                  src="/images/doctor-medical.webp"
                   alt="Paediatric Eye Care"
                   width={39}
                   height={50}
@@ -513,7 +513,7 @@ export default function HomePage() {
         {/* Background Graphic */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/doctor-section-background.png"
+            src="/images/doctor-section-background.webp"
             alt="Hospital background"
             fill
             className="object-cover object-center opacity-60"
@@ -537,7 +537,7 @@ export default function HomePage() {
           {/* Column 2: Center Operation Theater Photo */}
           <div className="lg:col-span-5 relative min-h-[250px] sm:min-h-[340px] lg:min-h-[500px] overflow-hidden">
             <Image
-              src="/images/Why-us.jpg"
+              src="/images/Why-us.webp"
               alt="State-of-the-art Operation Theater at Ashvini Netralaya"
               fill
               className="object-cover object-center"
@@ -705,7 +705,7 @@ export default function HomePage() {
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
                   <p className="text-2xl font-extrabold text-white">₹50/-</p>
                   <p className="text-xs font-semibold text-sky-200 mt-0.5">OPD Consultation</p>
-                  <p className="text-[11px] text-slate-200 mt-1">10:30 AM to 2:00 PM</p>
+                  <p className="text-[11px] text-slate-200 mt-1">10:00 AM to 5:00 PM</p>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20">
@@ -725,7 +725,7 @@ export default function HomePage() {
             <div className="lg:col-span-4 flex flex-col items-center justify-center text-center p-6 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 space-y-4">
               <div className="relative w-24 h-24 rounded-2xl overflow-hidden bg-white p-2 shadow-lg">
                 <Image
-                  src="/images/AN-1080-by-1080-SDY-logo.png"
+                  src="/images/AN-1080-by-1080-SDY-logo.webp"
                   alt="Sarva Drishti Yojana Logo"
                   fill
                   className="object-contain"
@@ -746,13 +746,22 @@ export default function HomePage() {
                 >
                   Scheme Details &amp; Eligibility
                 </Link>
-                <a
-                  href={`tel:${siteConfig.phoneClean}`}
-                  className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 bg-sky-900/60 hover:bg-sky-900 text-white font-semibold text-xs rounded-xl border border-white/25 transition"
-                >
-                  <Phone className="w-3.5 h-3.5" />
-                  <span>Call Desk: {siteConfig.phone}</span>
-                </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <a
+                    href={`tel:${siteConfig.phoneClean}`}
+                    className="inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-sky-900/60 hover:bg-sky-900 text-white font-semibold text-xs rounded-xl border border-white/25 transition"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>{siteConfig.phone}</span>
+                  </a>
+                  <a
+                    href={`tel:${siteConfig.altPhoneClean}`}
+                    className="inline-flex items-center justify-center gap-1.5 py-2 px-3 bg-sky-900/60 hover:bg-sky-900 text-white font-semibold text-xs rounded-xl border border-white/25 transition"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    <span>{siteConfig.altPhone}</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -809,7 +818,7 @@ export default function HomePage() {
               ))}
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6">
               {visitingConsultants.map((doctor) => (
                 <DoctorCard
                   key={doctor.id}
@@ -872,7 +881,7 @@ export default function HomePage() {
       <section className="relative py-14 sm:py-24 text-white text-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/New-Project-1.png"
+            src="/images/New-Project-1.webp"
             alt="Ashvini Netralaya Consultation"
             fill
             className="object-cover object-center"
@@ -904,10 +913,17 @@ export default function HomePage() {
             </button>
             <a
               href={`tel:${siteConfig.phoneClean}`}
-              className="w-full sm:w-auto justify-center px-7 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold text-sm sm:text-base rounded-full border border-white/30 transition-all backdrop-blur-sm flex items-center gap-2"
+              className="w-full sm:w-auto justify-center px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold text-sm sm:text-base rounded-full border border-white/30 transition-all backdrop-blur-sm flex items-center gap-2"
             >
               <Phone className="w-4 h-4" />
               <span>Call: {siteConfig.phone}</span>
+            </a>
+            <a
+              href={`tel:${siteConfig.altPhoneClean}`}
+              className="w-full sm:w-auto justify-center px-6 py-3.5 bg-white/15 hover:bg-white/25 text-white font-semibold text-sm sm:text-base rounded-full border border-white/30 transition-all backdrop-blur-sm flex items-center gap-2"
+            >
+              <Phone className="w-4 h-4" />
+              <span>Call: {siteConfig.altPhone}</span>
             </a>
           </div>
         </div>

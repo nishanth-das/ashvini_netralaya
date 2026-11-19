@@ -23,7 +23,7 @@ export const inHouseDoctors: Doctor[] = [
     department: "Ophthalmologist, Phaco & Anterior Segment Surgery",
     departmentLine1: "Ophthalmologist,",
     departmentLine2: "Phaco & Anterior Segment Surgery",
-    image: "/images/Dr-anurag.webp",
+    image: "/images/DrAnuragMajumder.webp",
   },
   {
     id: "dr-subrata-saha",

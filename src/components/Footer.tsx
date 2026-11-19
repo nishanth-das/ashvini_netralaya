@@ -24,9 +24,9 @@ export function Footer() {
           {/* Column 1: Hospital Identity & Credentials (4 cols) */}
           <div className="sm:col-span-2 lg:col-span-4 space-y-5">
             <Link href="/" className="inline-block">
-              <div className="relative w-44 sm:w-52 h-12 sm:h-14">
+              <div className="relative w-56 sm:w-64 h-12 sm:h-14">
                 <Image
-                  src="/images/AN-Website-name-logo-e1773034551124-1024x206.webp"
+                  src="/images/ashvini-logo-white.webp"
                   alt="Ashvini Netralaya Logo"
                   fill
                   className="object-contain object-left"

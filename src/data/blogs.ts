@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
       name: "Dr. Anurag Majumdar",
       role: "Chairman and CEO | Phaco & Anterior Segment Surgery",
       qualifications: "MBBS, MS (Ophthalmology)",
-      image: "/images/Dr-anurag.webp",
+      image: "/images/DrAnuragMajumder.webp",
     },
     seo: {
       metaTitle: "Cataract Lens Selection Guide: Monofocal vs Toric vs Multifocal | Ashvini Netralaya",

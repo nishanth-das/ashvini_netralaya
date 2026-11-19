@@ -1023,10 +1023,10 @@ export default function BangladeshEnglishPage() {
             <div className="bg-white rounded-xl p-5 border border-slate-200/90 shadow-xs text-center space-y-3">
               <div className="relative w-24 h-24 mx-auto rounded-full overflow-hidden border-2 border-sky-300 bg-slate-100 shadow-inner">
                 <Image
-                  src="/images/Dr-anurag.webp"
+                  src="/images/DrAnuragMajumder.webp"
                   alt="Dr. Anurag Majumdar"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
               </div>
               <div className="space-y-1">

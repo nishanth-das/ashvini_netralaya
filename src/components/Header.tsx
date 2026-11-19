@@ -93,11 +93,11 @@ export function Header({ onOpenBooking }: HeaderProps) {
             {/* Hospital Logo */}
             <Link href="/" className="flex items-center min-w-0 shrink py-1.5 group">
               <Image
-                src="/images/AN-Website-name-logo-e1773034551124-1024x206.webp"
+                src="/images/ashvini-logo-white.webp"
                 alt="Ashvini Netralaya - Superspeciality Eye Hospital"
-                width={270}
-                height={54}
-                className="h-[34px] sm:h-[48px] md:h-[52px] w-auto max-w-[175px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                width={310}
+                height={50}
+                className="h-[36px] sm:h-[46px] md:h-[50px] w-auto max-w-[210px] sm:max-w-none object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                 priority
               />
             </Link>

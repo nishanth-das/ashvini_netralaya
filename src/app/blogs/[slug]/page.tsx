@@ -119,7 +119,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: `${siteConfig.url}/images/AN-Website-name-logo-e1773034551124-1024x206.webp`,
+        url: `${siteConfig.url}/images/ashvini-logo-white.webp`,
       },
     },
     mainEntityOfPage: {
